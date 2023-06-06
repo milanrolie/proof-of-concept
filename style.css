@@ -194,6 +194,7 @@ p {
 header nav{
     display: flex;
     position: sticky;
+    width: 100%;
 }
 
 /* NAV END */
