@@ -184,4 +184,7 @@ p {
     font-size: 1.1em;
     color: var(--justWhite);
 }
-/* ============== FONT IMPORTS ============== */
+
+.yellow {
+    color: var(--candelLight);
+}
