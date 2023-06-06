@@ -188,3 +188,16 @@ p {
 .yellow {
     color: var(--candelLight);
 }
+
+/* NAV START */
+
+header nav{
+    display: flex;
+    position: sticky;
+}
+
+/* NAV END */
+
+/* HEADER START */
+
+/* HEADER END */
