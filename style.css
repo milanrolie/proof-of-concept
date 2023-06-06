@@ -147,7 +147,7 @@
     --justWhite: #FFFFFF;
     --jungleGreen: #163A3A;
     --pictonBlue: #3DBAE1;
-    --copy-font: 'Apercu', sans-serif;
+    --copy-font: 'Apercu pro', sans-serif;
     --paragraph-font: 'Jubilat', serif;
     --header-font: 'Kirang Haerang', sans-serif;
 }
@@ -158,6 +158,10 @@ body {
     color: var(--justWhite);
     width: 100%;
     height: 100vh;
+}
+
+section {
+    padding: 0 5em ;
 }
 
 h1 {
@@ -181,7 +185,7 @@ h3 {
 
 p {    
     font-family: var(--copy-font);
-    font-size: 1.1em;
+    font-size: 1em;
     color: var(--justWhite);
 }
 
@@ -202,3 +206,19 @@ header nav{
 /* HEADER START */
 
 /* HEADER END */
+
+
+/* ============== NUMBERS SECTION START ============== */
+
+.text-area {
+    display: flex;
+    flex-direction: row;
+}
+
+.numbers-header {
+    max-width: 40%;
+}
+
+.text-area p {
+    max-width: 40%;
+}
