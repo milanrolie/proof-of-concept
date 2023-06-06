@@ -340,6 +340,32 @@ header nav{
 /* ============== NUMBERS SECTION END ============== */
 
 
+/* ============== STORY SECTION START ============== */
+
+.scroll-marquee-wrapper {
+    --x: 0;
+    max-width: 100vw;
+}
+
+#legends-marquee {
+    display: block;
+    font-size: 8em;
+    font-family: var(--paragraph-font);
+    white-space: nowrap;
+    width: max-content;
+    margin-bottom: 0%;
+    transform: translateX(calc((-100% + 100vw) * var(--x)));
+}
+
+/* ============== STORY SECTION END ============== */
+
+/* ============== NEWS SECTION START ============== */
+    .news {
+        height: 100vh;
+    }
+/* ============== NEWS SECTION END ============== */
+
+
 /* ============== FOOTER START ============== */
 
 footer ul {
@@ -441,3 +467,4 @@ footer svg:hover {
     opacity: 50%;
 }
 
+/* ============== FOOTER END ============== */
