@@ -241,19 +241,8 @@ header nav{
     color: var(--justWhite);
 }
 
-.become-a-sponsor-button{
-    text-decoration: none;
-    border: none;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    background-color: var(--candelLight);
-    color: var(--charcoal);
-    border-radius: 40px;
-    margin: 0 0 0 30px;
-    font-weight: bold;
-    line-height: 140%;
-    font-size: 12px;
-    width: 100%;
+.sponsor-button svg {
+    transition: .2s;
 }
 
 /* NAV END */
@@ -576,7 +565,7 @@ footer nav {
     margin: 10% 0;
 }
 
-footer button {
+.sponsor-button {
     color: var(--charcoal);
     background-color: var(--candelLight);
     font-family: var(--copy-font);
@@ -589,16 +578,15 @@ footer button {
     cursor: pointer;
 }
 
-footer button:hover {
+.sponsor-button:hover {
     background-color: var(--justWhite);
 }
 
-footer button:hover svg {
+.sponsor-button:hover svg {
     transform: translateY(1px) translateX(3px);
-
 }
 
-footer button svg {
+.sponsor-button svg {
     transform: translateY(1px);
 }
 footer svg {
