@@ -254,6 +254,11 @@ header nav{
 
 /* HEADER START */
 
+.hero{
+    display: flex;
+    justify-content: space-between;
+}
+
 .hero-title{
     /* display: flex;
     flex-direction: column; */
@@ -296,6 +301,15 @@ header nav{
     color: var(--candelLight);
 }
 
+.hero-title-legends span{
+    font-size: clamp(40px, 10vw, 144px);
+}
+
+.hero-title-legends span:nth-of-type(1),
+.hero-title-legends span:nth-of-type(7){
+    font-size: clamp(36px, 9vw, 128px);
+}
+
 .hero-title-legends span:nth-of-type(4){
     font-size: clamp(29px, 7.2vw, 104px);
 }
@@ -303,6 +317,7 @@ header nav{
 .hero-title-begin{
     width: fit-content;
     margin: 0 0 0 auto;
+    letter-spacing: -0.1rem;
 }
 
 .hero-title-begin span:nth-of-type(2),
@@ -315,7 +330,7 @@ header nav{
     display: flex;
     align-items: center;
     transform: rotate(2deg);
-    margin: 30px 0 0 auto;
+    margin: 30px -30px 0 auto;
 }
 
 .hero-play-button button{
@@ -335,6 +350,7 @@ header nav{
     height: 12px;
     border-radius: 50%;
     background-color: var(--justWhite);
+    margin: 0 10px 0 0;
 }
 
 
