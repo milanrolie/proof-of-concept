@@ -2,8 +2,8 @@
 
 @font-face {
     font-family: 'Apercu';
-    src: url('assets/Fonts/Apercu-Bold.woff2') format('woff2'),
-        url('assets/Fonts/Apercu-Bold.woff') format('woff');
+    src: url('assets/fonts/Apercu-Bold.woff2') format('woff2'),
+        url('assets/fonts/Apercu-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -11,8 +11,8 @@
 
 @font-face {
     font-family: 'Apercu';
-    src: url('assets/Fonts/Apercu-Light.woff2') format('woff2'),
-        url('assets/Fonts/Apercu-Light.woff') format('woff');
+    src: url('assets/fonts/Apercu-Light.woff2') format('woff2'),
+        url('assets/fonts/Apercu-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -20,8 +20,8 @@
 
 @font-face {
     font-family: 'Apercu';
-    src: url('assets/Fonts/Apercu-Italic.woff2') format('woff2'),
-        url('assets/Fonts/Apercu-Italic.woff') format('woff');
+    src: url('assets/fonts/Apercu-Italic.woff2') format('woff2'),
+        url('assets/fonts/Apercu-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -29,8 +29,8 @@
 
 @font-face {
     font-family: 'Apercu';
-    src: url('assets/Fonts/Apercu-LightItalic.woff2') format('woff2'),
-        url('assets/Fonts/Apercu-LightItalic.woff') format('woff');
+    src: url('assets/fonts/Apercu-LightItalic.woff2') format('woff2'),
+        url('assets/fonts/Apercu-LightItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
     font-display: swap;
@@ -38,8 +38,8 @@
 
 @font-face {
     font-family: 'Apercu';
-    src: url('assets/Fonts/Apercu-BoldItalic.woff2') format('woff2'),
-        url('assets/Fonts/Apercu-BoldItalic.woff') format('woff');
+    src: url('assets/fonts/Apercu-BoldItalic.woff2') format('woff2'),
+        url('assets/fonts/Apercu-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -47,8 +47,8 @@
 
 @font-face {
     font-family: 'Apercu';
-    src: url('assets/Fonts/Apercu.woff2') format('woff2'),
-        url('assets/Fonts/Apercu.woff') format('woff');
+    src: url('assets/fonts/Apercu.woff2') format('woff2'),
+        url('assets/fonts/Apercu.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -56,8 +56,8 @@
 
 @font-face {
     font-family: 'Apercu';
-    src: url('assets/Fonts/Apercu-MediumItalic.woff2') format('woff2'),
-        url('assets/Fonts/Apercu-MediumItalic.woff') format('woff');
+    src: url('assets/fonts/Apercu-MediumItalic.woff2') format('woff2'),
+        url('assets/fonts/Apercu-MediumItalic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
@@ -65,8 +65,8 @@
 
 @font-face {
     font-family: 'Apercu';
-    src: url('assets/Fonts/Apercu-Medium.woff2') format('woff2'),
-        url('assets/Fonts/Apercu-Medium.woff') format('woff');
+    src: url('assets/fonts/Apercu-Medium.woff2') format('woff2'),
+        url('assets/fonts/Apercu-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -74,8 +74,8 @@
 
 @font-face {
     font-family: 'Apercu Pro';
-    src: url('assets/Fonts/ApercuPro-Light.woff2') format('woff2'),
-        url('assets/Fonts/ApercuPro-Light.woff') format('woff');
+    src: url('assets/fonts/ApercuPro-Light.woff2') format('woff2'),
+        url('assets/fonts/ApercuPro-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -83,8 +83,8 @@
 
 @font-face {
     font-family: 'Apercu';
-    src: url('assets/Fonts/Apercu-Mono.woff2') format('woff2'),
-        url('assets/Fonts/Apercu-Mono.woff') format('woff');
+    src: url('assets/fonts/Apercu-Mono.woff2') format('woff2'),
+        url('assets/fonts/Apercu-Mono.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -92,8 +92,8 @@
 
 @font-face {
     font-family: 'Apercu Pro';
-    src: url('assets/Fonts/ApercuPro-Bold.woff2') format('woff2'),
-        url('assets/Fonts/ApercuPro-Bold.woff') format('woff');
+    src: url('assets/fonts/ApercuPro-Bold.woff2') format('woff2'),
+        url('assets/fonts/ApercuPro-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -101,8 +101,8 @@
 
 @font-face {
     font-family: 'Apercu Pro';
-    src: url('assets/Fonts/ApercuPro-Regular.woff2') format('woff2'),
-        url('assets/Fonts/ApercuPro-Regular.woff') format('woff');
+    src: url('assets/fonts/ApercuPro-Regular.woff2') format('woff2'),
+        url('assets/fonts/ApercuPro-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -110,8 +110,8 @@
 
 @font-face {
     font-family: 'Apercu Pro';
-    src: url('assets/Fonts/ApercuPro-Medium.woff2') format('woff2'),
-        url('assets/Fonts/ApercuPro-Medium.woff') format('woff');
+    src: url('assets/fonts/ApercuPro-Medium.woff2') format('woff2'),
+        url('assets/fonts/ApercuPro-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -119,8 +119,8 @@
 
 @font-face {
     font-family: 'Jubilat';
-    src: url('assets/Fonts/JubilatMedium-Roman.woff2') format('woff2'),
-        url('assets/Fonts/JubilatMedium-Roman.woff') format('woff');
+    src: url('assets/fonts/JubilatMedium-Roman.woff2') format('woff2'),
+        url('assets/fonts/JubilatMedium-Roman.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -128,8 +128,8 @@
 
 @font-face {
     font-family: 'Kirang Haerang';
-    src: url('assets/Fonts/KirangHaerang-Regular.woff2') format('woff2'),
-        url('assets/Fonts/KirangHaerang-Regular.woff') format('woff');
+    src: url('assets/fonts/KirangHaerang-Regular.woff2') format('woff2'),
+        url('assets/fonts/KirangHaerang-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -158,6 +158,12 @@ body {
     color: var(--justWhite);
     width: 100%;
     height: 100vh;
+}
+
+
+section {
+    padding: 0 6em ;
+    overflow: hidden;
 }
 
 h1 {
