@@ -260,9 +260,13 @@ header nav{
 
 /* HEADER START */
 
+.hero{
+    width: 100%;
+}
+
 .hero-title{
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
     width: 40%;
     transform: rotate(-2deg);
     margin: 100px 0 0 5%;
@@ -279,7 +283,7 @@ header nav{
 
 .hero-title-where,
 .hero-title-the-real,
-.hero-title-the-real section,
+.hero-title-the-real div,
 .hero-title-legends,
 .hero-title-begin{
     display: flex;
