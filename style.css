@@ -196,14 +196,152 @@ p {
 /* NAV START */
 
 header nav{
+    position: relative;
     display: flex;
     position: sticky;
+    margin: 20px 3rem 0 3rem;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Apercu';
+    font-weight: bold;
+    height: 80px;
+    font-size: 14px;
+    letter-spacing: 0.08rem;
+    line-height: 140%;
+}
+
+.nav-left-links{
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.logo{
+    position: absolute;
+    margin: 0 auto 0 auto;
+    left: 0;
+    right: 0;
+    width: 95px;
+}
+
+.nav-right-links{
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.nav-right-links a:nth-of-type(1){
+    color: var(--candelLight)
+}
+
+.about-link,
+.promise-link{
+    text-decoration: none;
+    color: var(--justWhite);
+}
+
+.become-a-sponsor-button{
+    text-decoration: none;
+    border: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background-color: var(--candelLight);
+    color: var(--charcoal);
+    border-radius: 40px;
+    margin: 0 0 0 30px;
+    font-weight: bold;
+    line-height: 140%;
+    font-size: 12px;
     width: 100%;
 }
 
 /* NAV END */
 
 /* HEADER START */
+
+.hero-title{
+    /* display: flex;
+    flex-direction: column; */
+    width: 40%;
+    transform: rotate(-2deg);
+    margin: 100px 0 0 5%;
+}
+
+.hero-title span{
+    font-size: clamp(36px, 9vw, 128px);
+    font-family: 'Kirang Haerang';
+    text-transform: uppercase;
+    display: flex;
+    height: fit-content;
+    line-height: 62%;
+}
+
+.hero-title-where,
+.hero-title-the-real,
+.hero-title-the-real section,
+.hero-title-legends,
+.hero-title-begin{
+    display: flex;
+    align-items: flex-end;
+}
+
+.hero-title-the-real{
+    width: fit-content;
+    margin: 0 0 0 auto;
+    gap: 0.25rem;
+}
+
+.hero-title-where span:nth-of-type(1),
+.hero-title-where span:nth-of-type(2),
+.hero-title-the-real > section:nth-of-type(2) span:nth-of-type(2){
+    font-size: clamp(2rem, 11.5vw, 168px);
+}
+
+.hero-title-legends{
+    color: var(--candelLight);
+}
+
+.hero-title-legends span:nth-of-type(4){
+    font-size: clamp(29px, 7.2vw, 104px);
+}
+
+.hero-title-begin{
+    width: fit-content;
+    margin: 0 0 0 auto;
+}
+
+.hero-title-begin span:nth-of-type(2),
+.hero-title-begin span:nth-of-type(3){
+    font-size: clamp(32px, 7.8vw, 112px);
+}  
+
+.hero-play-button{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    transform: rotate(2deg);
+    margin: 30px 0 0 auto;
+}
+
+.hero-play-button button{
+    font-family: 'Apercu';
+    background-color: var(--pictonBlue);
+    color: var(--justWhite);
+    border: none;
+    font-size: 16px;
+    border-radius: 50%;
+    width: clamp(40px, 5.5vw, 80px);
+    height: clamp(40px, 5.5vw, 80px);
+    margin: 0 1.25rem 0 0;
+}
+
+.duration-dot{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--justWhite);
+}
+
 
 /* HEADER END */
 
