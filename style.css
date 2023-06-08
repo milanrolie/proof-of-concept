@@ -376,7 +376,7 @@ header nav{
 
 .hero-video video{
     width: fit-content;
-    -webkit-mask-image: url(/assets/hero-pattern.svg);
+    -webkit-mask-image: url(./assets/hero-pattern.svg);
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: contain;
 }
@@ -401,7 +401,7 @@ header nav{
     justify-content: center;
     align-items: center;
     margin: 12rem 0 0 0;
-    background-image: url(/assets/intro-mask.svg);
+    background-image: url(./assets/intro-mask.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
