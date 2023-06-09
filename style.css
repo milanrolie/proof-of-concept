@@ -159,11 +159,10 @@ body {
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
-    /* overflow: hidden; */
 }
 
 section {
-    padding: 0 7em ;
+    padding: 0 6em ;
     overflow: hidden;
 }
 
@@ -204,7 +203,7 @@ header nav{
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 20px 3rem 0 3rem;
+    padding: 20px 3rem 20px 3rem;
     align-items: center;
     justify-content: space-between;
     font-family: 'Apercu';
@@ -214,6 +213,7 @@ header nav{
     letter-spacing: 0.08rem;
     line-height: 140%;
     z-index: 1;
+    background-color: var(--charcoal);
 }
 
 .nav-left-links{
@@ -222,12 +222,18 @@ header nav{
     gap: 34px;
 }
 
+
+.nav-left-links a:hover{
+    color: var(--candelLight);
+    cursor: pointer;
+}
+
 .logo{
     position: absolute;
     margin: 0 auto 0 auto;
     left: 0;
     right: 0;
-    width: 95px;
+    width: clamp(25px, 10vw, 85px);
 }
 
 .nav-right-links{
@@ -272,6 +278,10 @@ header nav{
     transform: rotate(-2deg);
 }
 
+.slide-first, .slide-second{
+    transform: translateX(-100vw);
+}
+
 .hero-title span{
     font-size: clamp(36px, 9vw, 128px);
     font-family: 'Kirang Haerang';
@@ -293,7 +303,7 @@ header nav{
 .hero-title-the-real{
     width: fit-content;
     margin: 0 0 0 auto;
-    gap: 0.25rem;
+    gap: 2vw;
 }
 
 .hero-title-where span:nth-of-type(1),
@@ -304,11 +314,12 @@ header nav{
 
 .hero-title-legends{
     color: var(--candelLight);
-
 }
 
 .hero-title-legends span{
         font-size: clamp(40px, 10vw, 144px);
+        opacity: 0;
+        transform: scale(5);
 }
 
 .hero-title-legends span:nth-of-type(1),
@@ -355,7 +366,8 @@ header nav{
 
 .hero-play-button button:hover{
     background-color: var(--candelLight);
-    color: var(--charcoal)
+    color: var(--charcoal);
+    cursor: pointer;
 }
 
 
@@ -391,6 +403,36 @@ header nav{
     overflow: hidden;
 }
 
+.iframe-container {
+    position: relative;
+    /* padding-bottom: 56.25%; */
+    aspect-ratio: 16 / 9;
+    width: 0%;
+    margin: 10rem auto 0 auto;
+  }
+
+.iframe-container-animation{
+    animation: fold-out 0.5s linear forwards;
+}
+
+  @keyframes fold-out{
+    from{
+        width: 0%;
+    }
+
+    to{
+        width: 80%;
+    }
+  }
+
+
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 /* HEADER END */
 
 /* INTRO START */
@@ -437,6 +479,7 @@ header nav{
     background-color: var(--pictonBlue);
     /* background-color: var(--charcoal); */
     color: white;
+    cursor: pointer;
 }
 
 /* INTRO END */
@@ -792,3 +835,10 @@ footer svg:hover {
 }
 
 /* ============== FOOTER END ============== */
+
+
+/* MEDIA QUERY 600PX */
+
+@media only screen and (max-width: 600px){
+    
+}
