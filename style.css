@@ -197,13 +197,17 @@ p {
 
 /* NAV START */
 
+/* .mobile-menu, .mobile-menu-wrapper{
+    display: none;
+} */
+
 header nav{
     position: relative;
     display: flex;
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 20px 3rem 20px 3rem;
+    padding: 20px 3vw 20px 3vw;
     align-items: center;
     justify-content: space-between;
     font-family: 'Apercu';
@@ -244,6 +248,10 @@ header nav{
 
 .top-nav-sponsor-button{
     margin: 0 0 0 30px;
+    font-size: clamp(1vw , 1vw, 14px);
+    display: flex;
+    align-items: center;
+    gap: 1vw;
 }
 
 .nav-right-links a:nth-of-type(1){
@@ -266,9 +274,8 @@ header nav{
 
 .hero{
     display: flex;
-    justify-content: space-between;
     width: 100%;
-    margin: 200px 0 0 0;
+    margin: calc(14vw + 30px) 0 0 0;
 }
 
 .hero-title{
@@ -348,6 +355,7 @@ header nav{
     align-items: center;
     transform: rotate(2deg);
     margin: 30px 0 0 auto;
+    opacity: 0;
 }
 
 
@@ -358,8 +366,8 @@ header nav{
     border: none;
     font-size: 16px;
     border-radius: 50%;
-    width: clamp(40px, 5.5vw, 80px);
-    height: clamp(40px, 5.5vw, 80px);
+    width: clamp(60px, 5.5vw, 80px);
+    height: clamp(60px, 5.5vw, 80px);
     margin: 0 1.25rem 0 0;
     transition: 0.2s;
 }
@@ -383,7 +391,7 @@ header nav{
     top: 0;
     right: 0;
     width: 45%;
-    height: 950px;
+    height: 65vw;
     overflow: hidden;
 }
 
@@ -408,7 +416,7 @@ header nav{
     /* padding-bottom: 56.25%; */
     aspect-ratio: 16 / 9;
     width: 0%;
-    margin: 10rem auto 0 auto;
+    margin: 11vw auto 0 auto;
   }
 
 .iframe-container-animation{
@@ -439,11 +447,11 @@ header nav{
 
 .intro{
     width: 100%;
-    height: 1081px;
+    height: 75vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 12rem 0 0 0;
+    margin: 12vw 0 0 0;
     background-image: url(./assets/intro-mask.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -840,5 +848,47 @@ footer svg:hover {
 /* MEDIA QUERY 600PX */
 
 @media only screen and (max-width: 600px){
-    
+
+    /* .mobile-menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #051A1A;
+        z-index: 1;
+    }
+
+    .mobile-menu-shape{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    } */
+
+    section{
+        padding: 0 7vw;
+    }
+
+    .top-nav{
+        padding: 10px 7vw 10px 7vw;
+        height: 50px;
+    }
+
+    .nav-left-links{
+        display: none;
+    }
+
+    .top-nav-sponsor-button{
+        display: none;
+    }
+
+    .nav-right-links{
+        margin: 0 0 0 auto;
+    }
+
+    .logo{
+        position: static;
+        margin: 0 auto 0 0;
+
+    }
 }

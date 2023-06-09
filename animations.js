@@ -8,6 +8,7 @@ gsap.to("#legends-marquee", {
   "--x": 1.8,
 });
 
+// HERO SECTION VIDEO ANIMATION //
 const iframeContainer = document.querySelector(".iframe-container");
 const heroPlayBtn = document.querySelector(".hero-play-button button");
 console.log(heroPlayBtn);
@@ -40,6 +41,7 @@ ScrollTrigger.create({
   },
 });
 
+//HERO TITLE SLIDE ANIMATION
 gsap.to(".slide-first", {
   x: 0,
   duration: 1,
@@ -54,6 +56,18 @@ gsap.to(".slide-first", {
       stagger: {
         from: "left",
         each: 0.4,
+      },
+      onComplete() {
+        gsap.to(".slide-second", {
+          x: 0,
+          duration: 1,
+          onComplete() {
+            gsap.to(".hero-play-button", {
+              opacity: 1,
+              duration: 0.5,
+            });
+          },
+        });
       },
     });
   },
