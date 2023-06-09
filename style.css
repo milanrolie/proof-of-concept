@@ -2,8 +2,8 @@
 
 @font-face {
     font-family: 'Apercu';
-    src: url('assets/Fonts/Apercu-Bold.woff2') format('woff2'),
-        url('assets/Fonts/Apercu-Bold.woff') format('woff');
+    src: url('assets/fonts/Apercu-Bold.woff2') format('woff2'),
+        url('assets/fonts/Apercu-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -11,8 +11,8 @@
 
 @font-face {
     font-family: 'Apercu';
-    src: url('assets/Fonts/Apercu-Light.woff2') format('woff2'),
-        url('assets/Fonts/Apercu-Light.woff') format('woff');
+    src: url('assets/fonts/Apercu-Light.woff2') format('woff2'),
+        url('assets/fonts/Apercu-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -20,8 +20,8 @@
 
 @font-face {
     font-family: 'Apercu';
-    src: url('assets/Fonts/Apercu-Italic.woff2') format('woff2'),
-        url('assets/Fonts/Apercu-Italic.woff') format('woff');
+    src: url('assets/fonts/Apercu-Italic.woff2') format('woff2'),
+        url('assets/fonts/Apercu-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -29,8 +29,8 @@
 
 @font-face {
     font-family: 'Apercu';
-    src: url('assets/Fonts/Apercu-LightItalic.woff2') format('woff2'),
-        url('assets/Fonts/Apercu-LightItalic.woff') format('woff');
+    src: url('assets/fonts/Apercu-LightItalic.woff2') format('woff2'),
+        url('assets/fonts/Apercu-LightItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
     font-display: swap;
@@ -38,8 +38,8 @@
 
 @font-face {
     font-family: 'Apercu';
-    src: url('assets/Fonts/Apercu-BoldItalic.woff2') format('woff2'),
-        url('assets/Fonts/Apercu-BoldItalic.woff') format('woff');
+    src: url('assets/fonts/Apercu-BoldItalic.woff2') format('woff2'),
+        url('assets/fonts/Apercu-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -47,8 +47,8 @@
 
 @font-face {
     font-family: 'Apercu';
-    src: url('assets/Fonts/Apercu.woff2') format('woff2'),
-        url('assets/Fonts/Apercu.woff') format('woff');
+    src: url('assets/fonts/Apercu.woff2') format('woff2'),
+        url('assets/fonts/Apercu.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -56,8 +56,8 @@
 
 @font-face {
     font-family: 'Apercu';
-    src: url('assets/Fonts/Apercu-MediumItalic.woff2') format('woff2'),
-        url('assets/Fonts/Apercu-MediumItalic.woff') format('woff');
+    src: url('assets/fonts/Apercu-MediumItalic.woff2') format('woff2'),
+        url('assets/fonts/Apercu-MediumItalic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
@@ -65,8 +65,8 @@
 
 @font-face {
     font-family: 'Apercu';
-    src: url('assets/Fonts/Apercu-Medium.woff2') format('woff2'),
-        url('assets/Fonts/Apercu-Medium.woff') format('woff');
+    src: url('assets/fonts/Apercu-Medium.woff2') format('woff2'),
+        url('assets/fonts/Apercu-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -74,8 +74,8 @@
 
 @font-face {
     font-family: 'Apercu Pro';
-    src: url('assets/Fonts/ApercuPro-Light.woff2') format('woff2'),
-        url('assets/Fonts/ApercuPro-Light.woff') format('woff');
+    src: url('assets/fonts/ApercuPro-Light.woff2') format('woff2'),
+        url('assets/fonts/ApercuPro-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -83,8 +83,8 @@
 
 @font-face {
     font-family: 'Apercu';
-    src: url('assets/Fonts/Apercu-Mono.woff2') format('woff2'),
-        url('assets/Fonts/Apercu-Mono.woff') format('woff');
+    src: url('assets/fonts/Apercu-Mono.woff2') format('woff2'),
+        url('assets/fonts/Apercu-Mono.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -92,8 +92,8 @@
 
 @font-face {
     font-family: 'Apercu Pro';
-    src: url('assets/Fonts/ApercuPro-Bold.woff2') format('woff2'),
-        url('assets/Fonts/ApercuPro-Bold.woff') format('woff');
+    src: url('assets/fonts/ApercuPro-Bold.woff2') format('woff2'),
+        url('assets/fonts/ApercuPro-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -101,8 +101,8 @@
 
 @font-face {
     font-family: 'Apercu Pro';
-    src: url('assets/Fonts/ApercuPro-Regular.woff2') format('woff2'),
-        url('assets/Fonts/ApercuPro-Regular.woff') format('woff');
+    src: url('assets/fonts/ApercuPro-Regular.woff2') format('woff2'),
+        url('assets/fonts/ApercuPro-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -110,8 +110,8 @@
 
 @font-face {
     font-family: 'Apercu Pro';
-    src: url('assets/Fonts/ApercuPro-Medium.woff2') format('woff2'),
-        url('assets/Fonts/ApercuPro-Medium.woff') format('woff');
+    src: url('assets/fonts/ApercuPro-Medium.woff2') format('woff2'),
+        url('assets/fonts/ApercuPro-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -119,8 +119,8 @@
 
 @font-face {
     font-family: 'Jubilat';
-    src: url('assets/Fonts/JubilatMedium-Roman.woff2') format('woff2'),
-        url('assets/Fonts/JubilatMedium-Roman.woff') format('woff');
+    src: url('assets/fonts/JubilatMedium-Roman.woff2') format('woff2'),
+        url('assets/fonts/JubilatMedium-Roman.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -128,8 +128,8 @@
 
 @font-face {
     font-family: 'Kirang Haerang';
-    src: url('assets/Fonts/KirangHaerang-Regular.woff2') format('woff2'),
-        url('assets/Fonts/KirangHaerang-Regular.woff') format('woff');
+    src: url('assets/fonts/KirangHaerang-Regular.woff2') format('woff2'),
+        url('assets/fonts/KirangHaerang-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -158,10 +158,13 @@ body {
     color: var(--justWhite);
     width: 100%;
     height: 100vh;
+    overflow-x: hidden;
+    /* overflow: hidden; */
 }
 
 section {
-    padding: 0 6em ;
+    padding: 0 7em ;
+    overflow: hidden;
 }
 
 h1 {
@@ -196,16 +199,247 @@ p {
 /* NAV START */
 
 header nav{
+    position: relative;
     display: flex;
-    position: sticky;
+    position: fixed;
+    top: 0;
     width: 100%;
+    padding: 20px 3rem 0 3rem;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Apercu';
+    font-weight: bold;
+    height: 80px;
+    font-size: 14px;
+    letter-spacing: 0.08rem;
+    line-height: 140%;
+    z-index: 1;
+}
+
+.nav-left-links{
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.logo{
+    position: absolute;
+    margin: 0 auto 0 auto;
+    left: 0;
+    right: 0;
+    width: 95px;
+}
+
+.nav-right-links{
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.top-nav-sponsor-button{
+    margin: 0 0 0 30px;
+}
+
+.nav-right-links a:nth-of-type(1){
+    color: var(--candelLight)
+}
+
+.about-link,
+.promise-link{
+    text-decoration: none;
+    color: var(--justWhite);
+}
+
+.sponsor-button svg {
+    transition: .2s;
 }
 
 /* NAV END */
 
 /* HEADER START */
 
+.hero{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 200px 0 0 0;
+}
+
+.hero-title{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    transform: rotate(-2deg);
+}
+
+.hero-title span{
+    font-size: clamp(36px, 9vw, 128px);
+    font-family: 'Kirang Haerang';
+    text-transform: uppercase;
+    display: flex;
+    height: fit-content;
+    line-height: 62%;
+}
+
+.hero-title-where,
+.hero-title-the-real,
+.hero-title-the-real div,
+.hero-title-legends,
+.hero-title-begin{
+    display: flex;
+    align-items: flex-end;
+}
+
+.hero-title-the-real{
+    width: fit-content;
+    margin: 0 0 0 auto;
+    gap: 0.25rem;
+}
+
+.hero-title-where span:nth-of-type(1),
+.hero-title-where span:nth-of-type(2),
+.hero-title-the-real > div:nth-of-type(2) span:nth-of-type(2){
+    font-size: clamp(2rem, 11.5vw, 168px);
+}
+
+.hero-title-legends{
+    color: var(--candelLight);
+
+}
+
+.hero-title-legends span{
+        font-size: clamp(40px, 10vw, 144px);
+}
+
+.hero-title-legends span:nth-of-type(1),
+.hero-title-legends span:nth-of-type(7){
+    font-size: clamp(36px, 9vw, 128px);
+}
+
+
+.hero-title-legends span:nth-of-type(4){
+    font-size: clamp(29px, 7.2vw, 104px);
+}
+
+.hero-title-begin{
+    width: fit-content;
+    margin: 0 0 0 auto;
+}
+
+.hero-title-begin span:nth-of-type(2),
+.hero-title-begin span:nth-of-type(3){
+    font-size: clamp(32px, 7.8vw, 112px);
+}  
+
+.hero-play-button{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    transform: rotate(2deg);
+    margin: 30px 0 0 auto;
+}
+
+
+.hero-play-button button{
+    font-family: 'Apercu';
+    background-color: var(--pictonBlue);
+    color: var(--justWhite);
+    border: none;
+    font-size: 16px;
+    border-radius: 50%;
+    width: clamp(40px, 5.5vw, 80px);
+    height: clamp(40px, 5.5vw, 80px);
+    margin: 0 1.25rem 0 0;
+    transition: 0.2s;
+}
+
+.hero-play-button button:hover{
+    background-color: var(--candelLight);
+    color: var(--charcoal)
+}
+
+
+.duration-dot{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--justWhite);
+}
+
+.hero-video{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 950px;
+    overflow: hidden;
+}
+
+.hero-video video{
+    width: fit-content;
+    -webkit-mask-image: url(./assets/hero-pattern.svg);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+}
+
+.hero-pattern-filled{
+    position: absolute;
+    right: 0;
+    top: -80vw;
+    right: -60vw;
+    width: 50vw;
+    overflow: hidden;
+}
+
 /* HEADER END */
+
+/* INTRO START */
+
+.intro{
+    width: 100%;
+    height: 1081px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12rem 0 0 0;
+    background-image: url(./assets/intro-mask.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.intro-text-container p{
+    display: flex;
+    flex-direction: column;
+    color: var(--charcoal);
+    font-family: 'Jubilat';
+    font-size: clamp(2vw, 4vw, 57px);
+    padding: 0 14vw;
+    line-height: 96%;
+}
+
+.intro-about-button{
+    font-family: 'Apercu';
+    font-weight: 700;
+    line-height: 140%;
+    width: fit-content;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    background-color: var(--justWhite);
+    border-radius: 40px;
+    padding: 10px 20px;
+    margin: 2rem 0 0 0;
+    transition: 0.2s;
+}
+
+.intro-about-button:hover{
+    background-color: var(--pictonBlue);
+    /* background-color: var(--charcoal); */
+    color: white;
+}
+
+/* INTRO END */
 
 
 /* ============== NUMBERS SECTION START ============== */
@@ -339,8 +573,99 @@ header nav{
 
 /* ============== NUMBERS SECTION END ============== */
 
+/* ============== SPONSORS SECTION START ============== */
+
+.sponsors {
+    background-image: url("/assets/temporary-blue-background.svg");
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-position: center center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100vw;
+}    
+
+.sponsor-center-text {
+    text-align:center;
+}
+
+.sponsors > .sponsor-center-text > h2 {
+    font-weight: 200;
+    line-height: 0.9em;
+}
+
+.sponsors > .sponsor-center-text > p {
+    padding-top: 2em;
+}
+
+.sponsors > .sponsor-center-text > button {
+    background-color: var(--candelLight);
+    font-family: Apercu;
+    border-radius: 5em;
+    padding: 1em 1.8em;
+    font-weight: 600;
+    font-size: 0.75em;
+    margin-top: 2em;
+    border: 0px;
+}
+
+.sponsors > .sponsor-center-text > button:hover {
+    background-color: var(--justWhite);
+    color: var(--charcoal);
+
+}
+
+/* ============== SPONSORS SECTION END ============== */
+
 
 /* ============== STORY SECTION START ============== */
+
+.story-wrapper {
+    display: grid;
+    padding-top: 14em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "story-quote story-text";
+}
+  
+.story-quote > h2 {
+    grid-area: story-quote;
+    line-height: 90%;
+    font-weight: 200;
+}
+
+.story-text {
+    grid-area: story-text;
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+}
+
+.story-text p {
+    font-size: 0.85em;
+    max-width: 58%;
+    border-left: solid 2px var(--candelLight);
+    padding-left: 1.5em;
+    margin: 0;
+}
+  
+.story-video {
+    margin-top: 7em;
+    display: flex;
+    justify-content: center;
+}
+
+.story-video video{
+    -webkit-mask-image: url(./assets/story-shape.svg);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    margin-bottom: 12em;
+    width: fit-content;
+    width: 75vw;
+}
+
+/* marquee*/
 
 .scroll-marquee-wrapper {
     --x: 0;
@@ -433,7 +758,7 @@ footer nav {
     margin: 10% 0;
 }
 
-footer button {
+.sponsor-button {
     color: var(--charcoal);
     background-color: var(--candelLight);
     font-family: var(--copy-font);
@@ -446,16 +771,15 @@ footer button {
     cursor: pointer;
 }
 
-footer button:hover {
+.sponsor-button:hover {
     background-color: var(--justWhite);
 }
 
-footer button:hover svg {
+.sponsor-button:hover svg {
     transform: translateY(1px) translateX(3px);
-
 }
 
-footer button svg {
+.sponsor-button svg {
     transform: translateY(1px);
 }
 footer svg {
