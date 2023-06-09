@@ -223,7 +223,8 @@ header nav{
 }
 
 .nav-left-links a:hover{
-    color: var(--candelLight)
+    color: var(--candelLight);
+    cursor: pointer;
 }
 
 .logo{
@@ -364,7 +365,8 @@ header nav{
 
 .hero-play-button button:hover{
     background-color: var(--candelLight);
-    color: var(--charcoal)
+    color: var(--charcoal);
+    cursor: pointer;
 }
 
 
@@ -476,6 +478,7 @@ header nav{
     background-color: var(--pictonBlue);
     /* background-color: var(--charcoal); */
     color: white;
+    cursor: pointer;
 }
 
 /* INTRO END */
@@ -740,3 +743,10 @@ footer svg:hover {
 }
 
 /* ============== FOOTER END ============== */
+
+
+/* MEDIA QUERY 600PX */
+
+@media only screen and (max-width: 600px){
+    
+}

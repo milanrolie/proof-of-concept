@@ -25,7 +25,7 @@ heroPlayBtn.addEventListener("click", () => {
 });
 
 const showAnim = gsap
-  .from("nav", {
+  .from(".top-nav", {
     yPercent: -100,
     paused: true,
     duration: 0.2,
