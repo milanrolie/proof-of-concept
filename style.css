@@ -217,7 +217,7 @@ header nav{
     letter-spacing: 0.08rem;
     line-height: 140%;
     z-index: 1;
-    background-color: var(--charcoal);
+    /* background-color: var(--charcoal); */
 }
 
 .nav-left-links{
@@ -285,8 +285,12 @@ header nav{
     transform: rotate(-2deg);
 }
 
-.slide-first, .slide-second{
+.slide-first{
     transform: translateX(-100vw);
+}
+
+.slide-second{
+    opacity: 0;
 }
 
 .hero-title span{
@@ -358,7 +362,6 @@ header nav{
     opacity: 0;
 }
 
-
 .hero-play-button button{
     font-family: 'Apercu';
     background-color: var(--pictonBlue);
@@ -386,6 +389,28 @@ header nav{
     background-color: var(--justWhite);
 }
 
+/* .hero-video-container{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+} */
+
+/* .hero-video{
+    width: 50vw;
+    margin: 0 0 0 auto;
+    -webkit-mask-image: url(/assets/hero-pattern.svg);
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+}
+
+.masked-video{
+    width: 100%;
+    z-index: 2;
+    aspect-ratio: 1/1;
+} */
+
 .hero-video{
     position: absolute;
     top: 0;
@@ -399,8 +424,9 @@ header nav{
     width: fit-content;
     -webkit-mask-image: url(./assets/hero-pattern.svg);
     -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: contain;
+    -webkit-mask-size: contain; 
 }
+
 
 .hero-pattern-filled{
     position: absolute;
