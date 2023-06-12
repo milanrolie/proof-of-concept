@@ -11,43 +11,65 @@
 
 <body>
     <header>
-        <nav>
-            <section class="nav-left-links">
+        <nav class="top-nav">
+            <div class="nav-left-links">
                 <a href="/about.html" class="about-link">ABOUT</a>
                 <a href="/promise.html" class="promise-link">PROMISE</a>
-            </section>
-            <img src="/assets/logo.svg" class="logo" alt="ink-logo">
-            <section class="nav-right-links">
+            </div>
+            <img src="./assets/logo.svg" class="logo" alt="ink-logo">
+            <div class="nav-right-links">
                 <a>ENG</a>
                 <span>/</span>
                 <a>POR</a>
-                <button class="become-a-sponsor-button">become a sponsor</button>
-            </section>
+                <button class="sponsor-button top-nav-sponsor-button">
+                    Become a sponsor <svg width="6" height="11" viewBox="0 0 6 11" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.1417 0.25L0 1.48375L3.7085 5.5L0 9.51625L1.1417 10.75L6 5.5L1.1417 0.25Z"
+                            fill="#051A1A" />
+                    </svg>
+                </button>
+            </div>
+             <section class="mobile-menu">
+                <img src="./assets/mobile-menu-shape.svg" class="mobile-menu-shape">
+                <img src="./assets/open-menu-button.svg" class="open-menu-button">
+                <p class="mobile-menu-content">
+                    <a href="/about.html" class="about-link">ABOUT</a>
+                    <a href="/promise.html" class="promise-link">PROMISE</a>
+                    <button class="sponsor-button menu-sponsor-button">
+                        BECOME A SPONSOR <svg width="6" height="11" viewBox="0 0 6 11" fill="#FFFFFF"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.1417 0.25L0 1.48375L3.7085 5.5L0 9.51625L1.1417 10.75L6 5.5L1.1417 0.25Z"
+                                fill="#FFFFFF" />
+                        </svg>
+                    </button>
+                </p>
+            </section>   
         </nav>
     </header>
+
     <section class="hero">
-        <section class="hero-title">
-            <section class="hero-title-where">
+        <div class="hero-title">
+            <div class="hero-title-where slide-first">
                 <span>W</span>
                 <span>H</span>
                 <span>E</span>
                 <span>R</span>
                 <span>E</span>
-            </section>
-            <section class="hero-title-the-real">
-                <section>
+            </div>
+            <div class="hero-title-the-real slide-first">
+                <div>
                     <span>T</span>
                     <span>H</span>
                     <span>E</span>
-                </section>
-                <section>
+                </div>
+                <div>
                     <span>R</span>
                     <span>E</span>
                     <span>A</span>
                     <span>L</span>
-                </section>
-            </section>
-            <section class="hero-title-legends">
+                </div>
+            </div>
+            <div class="hero-title-legends">
                 <span>L</span>
                 <span>E</span>
                 <span>G</span>
@@ -55,21 +77,26 @@
                 <span>N</span>
                 <span>D</span>
                 <span>S</span>
-            </section>
-            <section class="hero-title-begin">
+            </div>
+            <div class="hero-title-begin slide-second">
                 <span>B</span>
                 <span>E</span>
                 <span>G</span>
                 <span>I</span>
                 <span>N.</span>
-            </section>
-            <section class="hero-play-button">
+            </div>
+            <div class="hero-play-button">
                 <button>Play</button>
                 <p class="duration-dot"></p>
                 <p class="hero-video-duration">1:09</p>
-            </section>
-        </section>
-        <section></section>
+            </div>
+        </div>
+        <div class="hero-video">
+            <video width="100%" height="100%" autoplay muted loop>
+                <source src="./assets/TEMPORARY-brazil-football.mp4" type="video/mp4">
+            </video>
+        </div>
+ <!-- <img src="/assets/hero-pattern-filled.svg" class="hero-pattern-filled"> -->
     </section>
     <section class="intro"></section>
     <!-- card carousel -->
@@ -101,8 +128,21 @@
         </section>
     
     </section>
+
+    <div class="iframe-container">   
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JNyDqAbIeJs?start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+
+    <div class="intro">
+            <div class="intro-text-container">
+                <p class="intro-text">We are dedicated to providing these children with a second chance in life, ensuring they have access to education, shelter, nutrition, and an opportunity to pursue their dreams of becoming top football players.
+                <button class="intro-about-button">ABOUT US</button>
+                </p>
+            </div>               
+    </div>            
+    <section class="legends"></section>
     <section class="numbers">
-       <h2>We are growing and the <span class="yellow">numbers</span> speak for it</h2>
         <div class="text-area">
             <h2 class="numbers-header">We are growing and the <span class="yellow">numbers</span> speak for it</h2>
             <p>Pellentesque pellentesque dignissim vulputate tincidunt. Dis a nec pulvinar potenti elit feugiat quis
@@ -159,8 +199,23 @@
 
         </div>
     </section>
-    <section class="sponsors"></section>
+    <section class="sponsors">
+        <div class="sponsor-center-text">
+            <h2>We become the <br> biggest club with <br> impact of Brasil</h2>
+            <p>Football is more than a game. In the favela areas of Rio de <br> Janeiro, where danger and violence are a constant threat, <br> football can be a lifeline for young kids.</p>
+            <button>BECOME A SPONSOR ></button>
+        </div>
+    </section>    
     <section class="story">
+        <div class="story-wrapper">
+            <div class="story-quote"><h2>Get to know us <br><span class="yellow">better.</span>Watch our <br> story</h2></div>
+            <div class="story-text"><p>Dui neque pellentesque posuere aenean sit nibh lectus nec a. Enim in praesent felis massa dui dolor purus aliquam. Pretium tortor eu sed molestie.</p></div>
+        </div>
+        <div class="story-video">
+            <video width="100%" height="100%" loop muted autoplay  >
+                <source src="./assets/TEMPORARY-brazil-football.mp4" type="video/mp4">
+            </video>
+        </div>
         <div class="scroll-marquee-wrapper">
             <p id="legends-marquee">Where the real <span class="yellow">legends</span> begin</p>
         </div>
