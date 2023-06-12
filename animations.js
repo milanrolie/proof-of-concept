@@ -72,3 +72,42 @@ gsap.to(".slide-first", {
     });
   },
 });
+
+let tl = gsap.timeline({ reversed: true });
+
+tl.to("div", {
+  opacity: 0.2,
+  duration: 0.4,
+  ease: Power0,
+});
+
+tl.to(
+  ".mobile-menu",
+  {
+    y: 0,
+    duration: 0.4,
+    ease: Power0,
+  },
+  "<"
+);
+
+tl.to(
+  ".open-menu-button",
+  {
+    rotation: 180,
+    duration: 0.2,
+  },
+  "<"
+);
+
+tl.set("body", {
+  overflow: "hidden",
+});
+
+const myAnimation = () => {
+  tl.reversed(!tl.reversed());
+};
+
+document
+  .querySelector(".open-menu-button")
+  .addEventListener("click", myAnimation);
