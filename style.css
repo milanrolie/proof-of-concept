@@ -504,6 +504,35 @@ header nav{
     }
 /* ============== NEWS SECTION END ============== */
 
+/* ============== LEGENDS SECTION START ============== */
+.card{
+    background: url(./assets/cardBody.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+    padding: 1em;
+    width: 22em;
+    height: 22em;
+}
+.card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.card > img {
+    width: 10em;
+    height: 10em;    
+}
+
+.card > table{
+    border: none;
+    margin: 10px;
+    width: 8em;
+    height: 8em;
+}
+/* ============== LEGENDS SECTION END ============== */
 
 /* ============== FOOTER START ============== */
 
