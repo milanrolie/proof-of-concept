@@ -196,10 +196,10 @@ p {
 }
 
 /* NAV START */
-    
-    .mobile-menu{
-        display: none;
-    }
+
+/* .mobile-menu, .mobile-menu-wrapper{
+    display: none;
+} */
 
 header nav{
     position: relative;
@@ -875,79 +875,21 @@ footer svg:hover {
 
 @media only screen and (max-width: 600px){
 
-    /* section, div{
-        opacity: 20%;
-    } */
-
-    .mobile-menu{
-        padding: 0;
-        display: block;
+    /* .mobile-menu{
         position: absolute;
         top: 0;
         left: 0;
         width: 100vw;
         height: 100vh;
-        background-color: transparent;
-        z-index: 2;
-        transform: translateY(calc(-100% + 100px));
-        overflow: hidden;
+        background-color: #051A1A;
+        z-index: 1;
     }
-    
-    .mobile-menu-shape{
-        position: absolute;
-    }
-
-    .mobile-menu-content{
-        position: relative;
-        display: flex;
-        gap: 2rem;
-        flex-direction: column;
-        margin: 40vh 0 0 20vw;
-        width: fit-content;
-        height: max-content;
-    }
-
-    .mobile-menu-content a{
-        color: var(--charcoal);
-        font-size: 14px;
-
-    }
-
-    .menu-sponsor-button{
-        background-color: var(--pictonBlue);
-        color: var(--justWhite);
-    }
-
-    .open-menu-button{
-        position: absolute;
-        bottom: 7%;
-        left: 10%;
-        right: 0px;
-        margin: 0 auto;
-    }
-
-    .open-menu-button-rotation{
-        animation: rotate 0.2s linear forwards;
-    }
-    
-        @keyframes rotate{
-            from{
-                transform: rotate(0);
-            }
-
-            to{
-                transform: rotate(180deg);
-            }
-        }
-
-
-
 
     .mobile-menu-shape{
-        width: 110%;
+        width: 100%;
         height: 100%;
-        object-fit: fill;
-    }
+        object-fit: contain;
+    } */
 
     section{
         padding: 0 7vw;
@@ -955,7 +897,7 @@ footer svg:hover {
 
     .top-nav{
         padding: 10px 7vw 10px 7vw;
-        height: 70px;
+        height: 50px;
     }
 
     .nav-left-links{
@@ -973,39 +915,6 @@ footer svg:hover {
     .logo{
         position: static;
         margin: 0 auto 0 0;
-    }
 
-    .hero{
-        flex-direction: column;
-        margin: calc(18vw + 30px) 0 0 0;
-    }
-
-    .hero-title{
-        width: 50%;
-        margin: 0 auto;
-    }
-
-    .hero-video{
-        position: static;
-        width: 100vw;
-        right: 0;
-        left: 0;
-        margin: 40px auto 0 auto;
-        overflow: hidden;
-        z-index: -1;
-    }
-
-    .hero-video video{
-        overflow: hidden;
-        -webkit-mask-image: url(./assets/hero-pattern-transparant.svg);
-        -webkit-mask-repeat: no-repeat;
-        -webkit-mask-size: contain;
-        -webkit-mask-position: left;
-    }
-
-    .hero-play-button{
-        position: absolute;
-        top: 110%;
-        right: -40%;
     }
 }
