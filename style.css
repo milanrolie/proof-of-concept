@@ -522,6 +522,12 @@ header nav{
     height: max-content;
 }
 
+.numbers-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .numbers-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -982,4 +988,23 @@ footer svg:hover {
         top: 110%;
         right: -40%;
     }
+
+/* ============== NUMBERS SECTION START MOBILE ============== */
+
+
+
+
+
+
+
+
+
+
+/* ============== NUMBERS SECTION END MOBILE ============== */
+
+
+
+
+
+
 }
