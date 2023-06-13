@@ -44,7 +44,7 @@ ScrollTrigger.create({
 //HERO TITLE SLIDE ANIMATION
 gsap.to(".slide-first", {
   x: 0,
-  duration: 1,
+  duration: 0.5,
   stagger: {
     each: 0.4,
   },
@@ -55,11 +55,11 @@ gsap.to(".slide-first", {
       opacity: 1,
       stagger: {
         from: "left",
-        each: 0.3,
+        each: 0.15,
       },
       onComplete() {
         gsap.to(".slide-second", {
-          opacity: 1,
+          x: 0,
           duration: 0.5,
           onComplete() {
             gsap.to(".hero-play-button", {
@@ -72,3 +72,42 @@ gsap.to(".slide-first", {
     });
   },
 });
+
+let tl = gsap.timeline({ reversed: true });
+
+tl.to("div", {
+  opacity: 0.2,
+  duration: 0.4,
+  ease: Power0,
+});
+
+tl.to(
+  ".mobile-menu",
+  {
+    y: 0,
+    duration: 0.4,
+    ease: Power0,
+  },
+  "<"
+);
+
+tl.to(
+  ".open-menu-button",
+  {
+    rotation: 180,
+    duration: 0.2,
+  },
+  "<"
+);
+
+tl.set("body", {
+  overflow: "hidden",
+});
+
+const myAnimation = () => {
+  tl.reversed(!tl.reversed());
+};
+
+document
+  .querySelector(".open-menu-button")
+  .addEventListener("click", myAnimation);
