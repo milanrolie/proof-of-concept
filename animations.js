@@ -44,7 +44,7 @@ ScrollTrigger.create({
 //HERO TITLE SLIDE ANIMATION
 gsap.to(".slide-first", {
   x: 0,
-  duration: 1,
+  duration: 0.5,
   stagger: {
     each: 0.4,
   },
@@ -55,12 +55,12 @@ gsap.to(".slide-first", {
       opacity: 1,
       stagger: {
         from: "left",
-        each: 0.4,
+        each: 0.15,
       },
       onComplete() {
         gsap.to(".slide-second", {
           x: 0,
-          duration: 1,
+          duration: 0.5,
           onComplete() {
             gsap.to(".hero-play-button", {
               opacity: 1,

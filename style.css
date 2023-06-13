@@ -197,6 +197,11 @@ p {
 
 /* NAV START */
 
+.mobile-menu, .mobile-menu-wrapper{
+    display: none;
+}
+
+
 .mobile-menu {
     display: none;
 }
@@ -217,7 +222,6 @@ header nav {
     letter-spacing: 0.08rem;
     line-height: 140%;
     z-index: 1;
-    background-color: var(--charcoal);
 }
 
 .nav-left-links {
@@ -276,6 +280,7 @@ header nav {
     display: flex;
     width: 100%;
     margin: calc(14vw + 30px) 0 0 0;
+    overflow: visible;
 }
 
 .hero-title {
@@ -285,6 +290,11 @@ header nav {
     transform: rotate(-2deg);
 }
 
+.hero-heading{
+    font-weight: normal;
+}
+
+.slide-first, .slide-second{
 .slide-first,
 .slide-second {
     transform: translateX(-100vw);
@@ -379,7 +389,6 @@ header nav {
     cursor: pointer;
 }
 
-
 .duration-dot {
     width: 12px;
     height: 12px;
@@ -393,14 +402,20 @@ header nav {
     right: 0;
     width: 45%;
     height: 65vw;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .hero-video video {
     width: fit-content;
     -webkit-mask-image: url(./assets/hero-pattern.svg);
+    mask-image: url(./assets/hero-pattern.svg);
     -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
     -webkit-mask-size: contain;
+    mask-size: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
 }
 
 .hero-pattern-filled {
@@ -433,7 +448,6 @@ header nav {
         width: 80%;
     }
 }
-
 
 .iframe-container iframe {
     position: absolute;
@@ -522,6 +536,12 @@ header nav {
 .shapes {
     width: max-content;
     height: max-content;
+}
+
+.numbers-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .numbers-wrapper {
@@ -862,10 +882,6 @@ footer svg:hover {
 
 @media only screen and (max-width: 600px) {
 
-    /* section, div{
-        opacity: 20%;
-    } */
-
     .mobile-menu {
         padding: 0;
         display: block;
@@ -887,16 +903,16 @@ footer svg:hover {
     .mobile-menu-content {
         position: relative;
         display: flex;
-        gap: 2rem;
+        gap: 2.5rem;
         flex-direction: column;
-        margin: 40vh 0 0 20vw;
-        width: fit-content;
-        height: max-content;
+        margin: 32vh 0 0 25vw;
+        width: fit-content; 
     }
 
     .mobile-menu-content a {
         color: var(--charcoal);
-        font-size: 14px;
+        font-size: 43px;
+        font-family: var(--paragraph-font);
 
     }
 
@@ -922,6 +938,7 @@ footer svg:hover {
             transform: rotate(0);
         }
 
+    .mobile-menu-shape{
         to {
             transform: rotate(180deg);
         }
@@ -942,7 +959,7 @@ footer svg:hover {
 
     .top-nav {
         padding: 10px 7vw 10px 7vw;
-        height: 70px;
+        height: 50px;
     }
 
     .nav-left-links {
@@ -965,19 +982,18 @@ footer svg:hover {
     .hero {
         flex-direction: column;
         margin: calc(18vw + 30px) 0 0 0;
+        padding: 0;
     }
-
-    .hero-title {
-        width: 50%;
-        margin: 0 auto;
+    
+    .hero-title{
+        width: 70%;
     }
 
     .hero-video {
         position: static;
-        width: 100vw;
+        width: 100%;
         right: 0;
-        left: 0;
-        margin: 40px auto 0 auto;
+        margin: -40px auto 0 auto;
         overflow: hidden;
         z-index: -1;
     }
@@ -985,16 +1001,59 @@ footer svg:hover {
     .hero-video video {
         overflow: hidden;
         -webkit-mask-image: url(./assets/hero-pattern-transparant.svg);
+        mask-image: url(./assets/hero-pattern-transparant.svg);
         -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
         -webkit-mask-size: contain;
-        -webkit-mask-position: left;
+        mask-size: contain;
+        -webkit-mask-position: right;
+        mask-position: right;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+
     }
 
     .hero-play-button {
         position: absolute;
         top: 110%;
-        right: -40%;
     }
+    
+    .hero-title span{
+        font-size: clamp(36px, 12.5vw, 128px);
+    }
+
+    .hero-title-where span:nth-of-type(1),
+    .hero-title-where span:nth-of-type(2),
+    .hero-title-the-real > div:nth-of-type(2) span:nth-of-type(2){
+        font-size: clamp(2rem, 16vw, 168px);
+    } 
+    
+    .hero-title-legends span{
+        font-size: clamp(40px, 14vw, 144px);
+        opacity: 0;
+        transform: scale(5);
+    }
+
+    .hero-title-legends span:nth-of-type(1),
+    .hero-title-legends span:nth-of-type(7){
+    font-size: clamp(36px, 12.5vw, 128px);
+    }
+
+    .hero-title-legends span:nth-of-type(4){
+    font-size: clamp(29px, 10vw, 104px);
+    }
+
+    .hero-title-begin span:nth-of-type(2),
+    .hero-title-begin span:nth-of-type(3){
+    font-size: clamp(32px, 11vw, 112px); 
+    }  
+
+
+/* ============== NUMBERS SECTION START MOBILE ============== */
+
+
+
+/* ============== NUMBERS SECTION END MOBILE ============== */
 
     /* ============== NUMBERS SECTION START MOBILE ============== */
 
