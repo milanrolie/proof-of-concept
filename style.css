@@ -236,7 +236,7 @@ header nav {
     margin: 0 auto 0 auto;
     left: 0;
     right: 0;
-    width: clamp(25px, 10vw, 85px);
+    width: clamp(25px, 8vw, 65px);
 }
 
 .nav-right-links {
@@ -275,7 +275,6 @@ header nav {
     display: flex;
     width: 100%;
     margin: calc(14vw + 30px) 0 0 0;
-    overflow: visible;
 }
 
 .hero-title {
@@ -291,7 +290,8 @@ header nav {
 
 .slide-first,
 .slide-second {
-    transform: translateX(-100vw);
+    opacity: 0;
+    transform: scale(2);
 }
 
 .hero-title span {
@@ -361,6 +361,7 @@ header nav {
     transform: rotate(2deg);
     margin: 30px 0 0 auto;
     opacity: 0;
+    transform: translateX(-20vw);
 }
 
 
@@ -369,12 +370,18 @@ header nav {
     background-color: var(--pictonBlue);
     color: var(--justWhite);
     border: none;
-    font-size: 16px;
+    font-size: clamp(1vw, 16px, 16px);
     border-radius: 50%;
     width: clamp(60px, 5.5vw, 80px);
     height: clamp(60px, 5.5vw, 80px);
     margin: 0 1.25rem 0 0;
     transition: 0.2s;
+}
+
+.hero-play-button .hero-play-button-content{
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
 }
 
 .hero-play-button button:hover {
@@ -397,6 +404,7 @@ header nav {
     width: 45%;
     height: 65vw;
     overflow: visible;
+    transform: translateX(100%);
 }
 
 .hero-video video {
@@ -884,62 +892,73 @@ footer svg:hover {
         left: 0;
         width: 100vw;
         height: 100vh;
-        background-color: transparent;
-        z-index: 2;
-        transform: translateY(calc(-100% + 100px));
-        overflow: hidden;
+        z-index: 1;
+        transform: translateY(-100%);
+        overflow: visible; 
+        background-color: var(--candelLight);
+        transition: 0.4s ease-out;
+    }
+    
+    .mobile-menu-slider{
+        transform: translateY(0%);
     }
 
-    .mobile-menu-shape {
+    .open-menu-button{
         position: absolute;
+        background-color: var(--candelLight);
+        color: var(--charcoal);
+        border-radius: 50%;
+        border: none;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: -8vw;
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .open-menu-button img{
+        margin: 60% 0 0 0;
+    }
+
+    .close-menu-button{
+        padding: 1rem;
+        text-align: right;
+        font-size: 22px;
+        margin: 0 0 20vh 0;
+    }
+
+    .close-menu-button-text{
+        font-family: 'Kirang Haerang';
+        color: var(--charcoal);
     }
 
     .mobile-menu-content {
         position: relative;
         display: flex;
-        gap: 2.5rem;
+        gap: 4rem;
         flex-direction: column;
-        margin: 32vh 0 0 25vw;
-        width: fit-content; 
+        width: 100%; 
+    }   
+
+    .mobile-link{
+        color: var(--charcoal);
+        font-size: clamp( 28px, 10vw, 43px);
+        font-family: 'Apercu';
+        padding: 0 0 0 10vw;
     }
 
-    .mobile-menu-content a {
-        color: var(--charcoal);
-        font-size: 43px;
-        font-family: var(--paragraph-font);
-
+    .menu-stagger{
+        transform: translateY(-30px);
+        opacity: 0;
+        transition: none;
     }
 
     .menu-sponsor-button {
         background-color: var(--pictonBlue);
         color: var(--justWhite);
-    }
-
-    .open-menu-button {
-        position: absolute;
-        bottom: 7%;
-        left: 10%;
-        right: 0px;
+        width: fit-content;
         margin: 0 auto;
-    }
-
-    .open-menu-button-rotation {
-        animation: rotate 0.2s linear forwards;
-    }
-
-    @keyframes rotate {
-        from {
-            transform: rotate(0);
-        }
-        to {
-            transform: rotate(180deg);
-        }
-    }
-
-    .mobile-menu-shape {
-        width: 110%;
-        height: 100%;
-        object-fit: fill;
     }
 
     section {
@@ -971,19 +990,19 @@ footer svg:hover {
     .hero {
         flex-direction: column;
         margin: calc(18vw + 30px) 0 0 0;
-        padding: 0;
+        padding: 0 7vw;
     }
     
     .hero-title{
         width: 70%;
+        margin: 0 auto;
     }
 
     .hero-video {
         position: static;
         width: 100%;
         right: 0;
-        margin: -40px auto 0 auto;
-        overflow: hidden;
+        margin: -40px -80px 0 auto;
         z-index: -1;
     }
 
@@ -1002,8 +1021,17 @@ footer svg:hover {
     }
 
     .hero-play-button {
+        margin: 0;
+        gap: 1rem;
         position: absolute;
-        top: 110%;
+        top: 130%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-play-button button{
+        margin: 0;
     }
     
     .hero-title span{
@@ -1071,7 +1099,6 @@ footer svg:hover {
         padding-left: 0;
     }
 
-
     .numbers-wrapper {
         transform: rotate(90deg);
         max-height: 100vw;
@@ -1100,5 +1127,4 @@ footer svg:hover {
     .footer-container {
         padding: 2em;
     }
-}
 }
