@@ -1243,6 +1243,7 @@ footer svg:hover {
         transform: rotate(90deg);
         max-height: 100vw;
         margin-bottom: 100%;
+        padding-left: 100%;
     }
 
     .numbers-wrapper svg {
@@ -1250,11 +1251,31 @@ footer svg:hover {
     }
 
     .stats-numbers {
-        transform: rotate(270deg);
     }
     
     .numbers-wrapper p {
         transform: rotate(270deg);
+    }
+    
+    .nr358 {
+        transform: rotate(270deg) translateX(-110%) translateY(-20%);
+    }
+
+    .nr04 {
+        transform: rotate(276deg) translateX(-20%) translateY(20%);
+    }
+
+    .nr08 {
+        transform: rotate(270deg) translateX(-20%) translateY(20%);
+    }
+
+    .nr12 {
+        transform: rotate(270deg) translateX(-20%) translateY(0%);
+    }
+
+    .new-partners p {
+        transform: rotate(270deg) translateX(100%) translateY(0%);
+        right: 0;
     }
     
     /* ============== NUMBERS SECTION END MOBILE ============== */
