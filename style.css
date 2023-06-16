@@ -887,7 +887,6 @@ footer svg:hover {
 
 /* ============== FOOTER END ============== */
 
-
 /* MEDIA QUERY 600PX */
 
 @media only screen and (max-width: 600px){
@@ -904,7 +903,7 @@ footer svg:hover {
         transform: translateY(-100%);
         overflow: visible; 
         background-color: var(--candelLight);
-        transition: 0.4s ease-out;
+        transition: transform 0.4s ease-out;
     }
     
     .mobile-menu-slider{
