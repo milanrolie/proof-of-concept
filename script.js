@@ -1,8 +1,6 @@
-var cardSection = document.querySelector('.card-section')
-var nextBtn = document.querySelector ('.next-btn')
-var prevBtn = document.querySelector ('.prev-btn')
 
 
+<<<<<<< HEAD
 import * as prismic from 'https://cdn.skypack.dev/@prismicio/client';
 
 const repositoryName = 'projectink'
@@ -36,3 +34,5 @@ nextBtn.onclick = () => {
     cardSection.scrollLeft -= 500;
   };
 
+=======
+>>>>>>> 8d651b43472f3983208dc5475e6ef8fad5e9b522
