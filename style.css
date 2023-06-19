@@ -777,6 +777,7 @@ header nav {
 /* ============== STORY SECTION END ============== */
 
 /* ============== NEWS SECTION START ============== */
+<<<<<<< HEAD
     .news {
        
         width: 100%;
@@ -807,6 +808,12 @@ header nav {
         
 
     }
+=======
+.news {
+    height: 100vh;
+}
+
+>>>>>>> 75131d8d6326696d48c4addd118e546dc38e1640
 /* ============== NEWS SECTION END ============== */
 
 /* ============== LEGENDS SECTION START ============== */
