@@ -783,6 +783,141 @@ header nav {
 
 /* ============== NEWS SECTION END ============== */
 
+/* ============== LEGENDS SECTION START ============== */
+
+.legends{
+    align-items: center;
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100vw;
+}
+.card-bg{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.btn-wrap {
+	text-align: center;
+	width: 100%;
+}
+
+.btn-wrap > button{
+    background-color: transparent;
+    border: none;
+}
+
+.card{
+    background: url(./assets/card/cardBody.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+    padding: 1em;
+    width: 22em;
+    height: 22em;
+}
+.card-header{
+    width: 18em;
+    height: 11em;
+    padding: 0%;
+    display: grid;
+    grid-template-columns: repeat(2, 7em);
+    grid-template-rows: repeat(4, 2.7em);
+}
+
+.card-number{
+    font-family: Kirang Haerang;
+    font-size: 4em;
+    grid-row-start: 1;
+    margin: auto;
+}
+
+.card-nm, .card-flag, .card-logo{
+    width: 2em;
+    height: 1.5em;
+    font-family: Jubilat;
+    margin-top: 0.7em;
+    margin-left: 1.7em;
+}
+.card-nm{
+    grid-row-start: 2;
+    font-size: 1.2em;
+    margin-left: 1.5em;
+    margin-top: 1.7em;
+}
+.card-flag{
+    grid-row-start: 3;
+}
+.card-logo{
+    grid-row-start: 4;
+    margin-top: 0em;
+   
+}
+
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 10em;
+    margin: auto;
+    color: var(--charcoal);
+
+}
+.card-text > h3{
+    width: 10em;
+    font-family: Jubilat;
+    font-size: 1.2em;
+    padding: 0.5em;
+    text-align: center;
+    font-weight: normal;
+    overflow-wrap:normal;
+    align-self: center;
+    display: flex;
+    color: var(--charcoal);
+    border-bottom:#ffffff42 solid 1px;
+}
+.card-text > table{
+    font-family:var(--copy-font);
+    font-size: 1em;
+    margin: 0.5em;
+
+}
+.number{
+    font-family:var(--header-font);
+}
+.card-profile {
+    width: 14em;
+    height: 10em; 
+    margin-left: -2em;
+    margin-top: 0.7em;  
+    grid-column-start: 2;
+}
+
+.card > table{
+    border: none;
+    margin: 10px;
+    width: 8em;
+    height: 8em;
+}
+
+.card-section{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    overflow-x: hidden;
+    scroll-snap-type: mandatory;
+    width: 75em;
+    padding: 1em;
+    margin: auto;
+
+}
+/* ============== LEGENDS SECTION END ============== */
+
+
 
 /* ============== FOOTER START ============== */
 
