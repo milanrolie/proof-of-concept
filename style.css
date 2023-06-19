@@ -778,9 +778,33 @@ header nav {
 
 /* ============== NEWS SECTION START ============== */
 .news {
-    height: 100vh;
+       
+    width: 100%;
+    height: 92vw;
+    display: flex;
+    margin: 1vw 0 0 0;
+    background-image: url(./assets/card/newsBg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
 }
 
+.news-card{
+    background: url(./assets/card/newsBody.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+    padding: 1em;
+    width: 22em;
+    height: 22em;
+}
+
+.news-card > img{
+    width: 10em;
+    height: 10em;
+}
 /* ============== NEWS SECTION END ============== */
 
 /* ============== LEGENDS SECTION START ============== */
