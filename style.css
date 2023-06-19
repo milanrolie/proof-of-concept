@@ -794,7 +794,7 @@ header nav{
 }
 
 .card{
-    background: url(./assets/card/cardBody.svg);
+    background: url(./assets/cardBody.svg);
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
