@@ -777,42 +777,72 @@ header nav {
 /* ============== STORY SECTION END ============== */
 
 /* ============== NEWS SECTION START ============== */
-.news {
+.news > h2{
+    font-family: var(--paragraph-font);
+    font-weight: 200;
+    line-height: 0.9em;
+}
+
+.news{
+
     display: flex;
-    height: 100%;
-    width: 100vw; 
     flex-direction: column;
     align-items: center;
+    width: 100%; 
+    margin: 22em;
+        margin-left: 4em;
+ 
+       
 }
 .news-card-section{
     display: flex;
     flex-direction: row;
-    justify-self: center;
-  
-    overflow-x: scroll;
-    width: auto;
-    height: 30em;
-    padding: 1em;
-    margin: auto;
+    padding: 0;
+    margin-top: 10em;
 
+    overflow-x: auto;
 }
 
 .news-card{
-    background: url(./assets/card/newsBody.svg);
+    background-image: url(./assets/card/newsBody.svg);
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
     flex-direction: column;
-    margin: 1em;
-    padding: 1em;
+    align-items: center;
+    margin-right: 4em;
     width: 30em;
     height: 33em;
+    flex: 0 0 auto; 
+  
+}
+.news-card > h3{
+    margin: 2em;
+    font-family:var(--paragraph-font);
+    color: var(--charcoal);
+}
+.news-card > img{
+    display: flex;
+    width: 26em;
+    height: 16em;
+    margin: 1em;
+    margin-right: 1.8em;
+    border-radius: 5px;
+} 
+
+.btn-wrap {
+	text-align: center;
+	width: 100%;
 }
 
-.news-card > img{
-    width: 10em;
-    height: 10em;
+.btn-wrap > button{
+    background-color: transparent;
+    border: none;
 }
+
+
+
+
 /* ============== NEWS SECTION END ============== */
 
 /* ============== LEGENDS SECTION START ============== */
@@ -824,13 +854,23 @@ header nav {
     height: 100%;
     width: 100vw;
 }
+
+.legends > h2{
+    font-family: var(--paragraph-font);
+    font-weight: 200;
+    line-height: 0.9em;
+}
+.legends > h2 > span{
+    font-family: var(--paragraph-font);
+    color: var(--candelLight);
+}
 .card-section{
     display: flex;
     flex-direction: row;
     justify-self: center;
-    overflow-x: scroll;
+    overflow-x: hidden;
     scroll-snap-type: mandatory;
-    width: 75em;
+    width: 100em;
     padding: 1em;
     margin: auto;
 
@@ -907,7 +947,7 @@ header nav {
 }
 .card-text > h3{
     width: 10em;
-    font-family: Jubilat;
+    font-family: var(--paragraph-font);
     font-size: 1.2em;
     padding: 0.5em;
     text-align: center;
