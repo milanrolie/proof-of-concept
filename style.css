@@ -778,15 +778,23 @@ header nav {
 
 /* ============== NEWS SECTION START ============== */
 .news {
-       
-    width: 100%;
-    height: 92vw;
     display: flex;
-    margin: 1vw 0 0 0;
-    background-image: url(./assets/card/newsBg.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
+    height: 100%;
+    width: 100vw; 
+    flex-direction: column;
+    align-items: center;
+}
+.news-card-section{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+  
+    overflow-x: scroll;
+    width: auto;
+    height: 30em;
+    padding: 1em;
+    margin: auto;
+
 }
 
 .news-card{
@@ -795,10 +803,10 @@ header nav {
     background-size: contain;
     display: flex;
     flex-direction: column;
-    margin: 2em;
+    margin: 1em;
     padding: 1em;
-    width: 22em;
-    height: 22em;
+    width: 30em;
+    height: 33em;
 }
 
 .news-card > img{
@@ -812,8 +820,20 @@ header nav {
 .legends{
     align-items: center;
     display: flex;
+    flex-direction: column;
     height: 100%;
     width: 100vw;
+}
+.card-section{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    overflow-x: scroll;
+    scroll-snap-type: mandatory;
+    width: 75em;
+    padding: 1em;
+    margin: auto;
+
 }
 
 .btn-wrap {
@@ -922,17 +942,7 @@ header nav {
     height: 8em;
 }
 
-.card-section{
-    display: flex;
-    flex-direction: row;
-    justify-self: center;
-    overflow-x: hidden;
-    scroll-snap-type: mandatory;
-    width: 75em;
-    padding: 1em;
-    margin: auto;
 
-}
 /* ============== LEGENDS SECTION END ============== */
 
 
