@@ -742,24 +742,8 @@ header nav{
 /* ============== NEWS SECTION END ============== */
 
 /* ============== LEGENDS SECTION START ============== */
-
-
-.btn-wrap {
-	text-align: center;
-	width: 100%;
-}
-button {
-	background-color: #ddd;
-	border: none;
-	padding: 10px 20px;
-	border-radius: 5px;
-	margin: 10px;
-	font-size: 18px;
-	font-weight: 600;
-}
-
 .card{
-    background: url(./assets/card/cardBody.svg);
+    background: url(./assets/cardBody.svg);
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
@@ -769,86 +753,21 @@ button {
     width: 22em;
     height: 22em;
 }
-.card-header{
-    width: 18em;
-    height: 11em;
-    padding: 0%;
-    display: grid;
-    grid-template-columns: repeat(2, 7em);
-    grid-template-rows: repeat(4, 3em);
-}
 .card-text{
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: flex-end;
+}
+.card > img {
     width: 10em;
-    margin: auto;
-
-}
-.card-text > h3{
-    font-family: Jubilat;
-    font-size: 1em;
-    padding: 0.7em;
-    text-align: center;
-    font-weight: normal;
-    overflow-wrap: break-word;
-    border-bottom:#fff solid 1px;
-}
-.card-text > table{
-    font-family:var(--copy-font);
-    font-size: 1em;
-    margin: 1em;
-
-}
-.number{
-    font-family:var(--header-font);
-}
-.card-profile {
-    width: 10em;
-    height: 10em; 
-    margin: 1em;
-    margin-bottom: 0em;  
-    grid-column-start: 2;
- 
-}
-.card-number{
-    font-family: Kirang Haerang;
-    font-size: 3em;
-    grid-row-start: 1;
-}
-.card-nm{
-    font-size: 2em;
-    font-family: Jubilat;
-    grid-row-start: 2;
-}
-.card-logo{
-    grid-row-start: 3;
-    width: 3em;
-    height: 2em;
+    height: 10em;    
 }
 
-.card-flag{
-    grid-row-start: 4;
-    width: 3em;
-    height: 2em;
-}
 .card > table{
     border: none;
     margin: 10px;
     width: 8em;
     height: 8em;
-}
-
-.card-section{
-    display: flex;
-    flex-direction: row;
-    justify-self: center;
-    overflow-x: scroll;
-    scroll-snap-type: mandatory;
-    width: 75em;
-    padding: 1em;
-    margin: 1em;
-
 }
 /* ============== LEGENDS SECTION END ============== */
 
