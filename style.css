@@ -1150,7 +1150,6 @@ footer svg:hover {
         .desktop-sponsor-text {
             display: none;
         }
-
     }
 
     @media only screen and (min-width: 441px) and (max-width: 515px){
@@ -1248,9 +1247,6 @@ footer svg:hover {
 
     .numbers-wrapper svg {
         min-width: calc(var(--ratio) * 190vw);
-    }
-
-    .stats-numbers {
     }
     
     .numbers-wrapper p {
