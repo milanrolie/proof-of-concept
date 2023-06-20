@@ -156,13 +156,14 @@ gsap.to(".nr08", {
 gsap.from(".filled", {
   scrollTrigger: {
     trigger: ".filled",
-    scrub: 2,
-    start: "top-=700",
-    end: "top",
+    start: "top center",
+    markers: true, 
   },
   duration: 2,
   "--variable": 1,
 })
+
+
 
 
 
