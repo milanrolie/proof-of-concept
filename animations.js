@@ -113,6 +113,62 @@ document.querySelector(".close-menu-button").addEventListener("click", () => {
   });
 });
 
+
+
+// ----------------- Numbers -----------------
+
+gsap.to(".nr358", {
+  innerText: 358, 
+  duration: 3.5,
+  // delay: 0.1,
+  snap: {
+    innerText: 1
+  }
+});
+
+gsap.to(".nr12", {
+  innerText: 12, 
+  duration: 2,
+  // delay: 0.1,
+  snap: {
+    innerText: 1
+  }
+})
+
+gsap.to(".nr04", {
+  innerText: 04, 
+  duration: 1.5,
+  // delay: 0.1,
+  snap: {
+    innerText: 1
+  }
+})
+
+gsap.to(".nr08", {
+  innerText: 08, 
+  duration: 3,
+  // delay: 0.1,
+  snap: {
+    innerText: 1
+  }
+})
+
+gsap.from(".filled", {
+  scrollTrigger: {
+    trigger: ".filled",
+    scrub: 2,
+    start: "top-=700",
+    end: "top",
+  },
+  duration: 2,
+  "--variable": 1,
+})
+
+
+
+
+
+
 //-----------------SCREEN WIDTH CHECK-----------------------//
 
 // This function makes sure the menu is removed and body is set to scroll when user resizes the screen above 600px when in mobile menu //
