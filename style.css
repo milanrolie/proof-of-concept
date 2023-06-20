@@ -852,7 +852,7 @@ footer a {
 
 .footer-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     padding: 4em 6em;
     align-items: flex-start;
@@ -921,6 +921,150 @@ footer svg:hover {
 
 /* ============== FOOTER END ============== */
 
+/* ============== SPONSOR PAGE START ============== */
+
+.sponsor-page {
+    height: 100vh;
+    padding-top: 7em;
+}
+
+.sponsor-text {
+    margin-bottom: 1em;
+}
+
+.options-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 90vh;
+    width: 100%;
+    padding: 2em;
+}
+
+.options-wrapper svg {
+    display: flex;
+    align-items: flex-start;
+    width: calc(var(--ratio) * 38vw);
+    height: auto;
+}
+
+.option1 {
+    position: absolute;
+    left: 18%;
+}
+
+.svg1 {
+    fill: var(--candelLight);
+}
+
+.option2 {
+    position: absolute;
+    left: 40%;
+    /* transform: translateX(50%) translateY(3%); */
+}
+
+.svg2 {
+    fill: var(--pictonBlue);
+}
+
+.option3 {
+    position: absolute;
+    right: 18%;
+    /* transform: translateX(51%) translateY(3%); */
+}
+
+.svg3 {
+    fill: var(--justWhite);
+}
+
+.option {
+    height: 100%;
+    width: max-content;
+}
+
+
+/* ==================sponsor page 2 =================== */
+
+.page2-sponsor-page {
+    height: 100vh;
+    width: 100%;
+    padding-top: 7em;
+}
+
+.page2-sponsor-text {
+    margin-bottom: 1em;
+}
+
+.page2-options-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 77%;
+    width: 100%;
+}
+
+.page2-option {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+
+.page2-option1 svg {
+    fill: var(--candelLight);
+}
+
+.page2-option2 svg {
+    fill: var(--pictonBlue);
+}
+
+.page2-option3 svg {
+    fill: var(--jungleGreen);
+}
+
+.options-text-wrapper {
+    position: absolute;
+    top: 10%;
+    left: 18%;
+    width: 60%;
+}
+
+.black {
+    color: var(--charcoal);
+}
+
+.green {
+    background-color: var(--justWhite);
+    color: var(--charcoal);
+}
+
+.green svg {
+fill: var(--charcoal);
+}
+
+.green:hover {
+    background-color: var(--pictonBlue);
+    color: var(--justWhite);
+}
+
+.green:hover svg {
+    fill: var(--justWhite);
+}
+
+.page2-options-wrapper h4 {
+    font-size: 2em;
+    font-family: var(--paragraph-font);
+    margin-bottom: 1em;
+}
+
+.sponsor-page-button {
+    position: absolute;
+    bottom: 6%;
+    right: 18%;
+}
 
 /* MEDIA QUERY 600PX */
 
@@ -1340,7 +1484,6 @@ footer svg:hover {
 
     .footer-container {
         padding: 2em;
-        flex-direction: column;
     }
 
 }
