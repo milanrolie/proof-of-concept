@@ -17,10 +17,10 @@ const client = prismic.createClient(repositoryName, { accessToken })
 // voor elk databundel render het in de html als een speler card
 const init = async () => {
   const players = await client.getAllByType('spelers')
-  
+
   players.forEach(player => {
-  
-    cardSection.innerHTML =
+    
+    cardSection.innerHTML +=
     `<article class="card"> 
     <div class="card-header">
         <img class="card-profile" src="`+ player.data.afbeelding.url +`" alt="">
@@ -31,7 +31,7 @@ const init = async () => {
     </div>  
     <div class="card-text">
 
-        <h3>` + player.data.nummer + ` </h3>
+        <h3>` + player.data.naam[0].text + ` </h3>
     <table>
         <tr>
           <td class="number">` + player.data.eng + `</td>
@@ -54,11 +54,7 @@ const init = async () => {
       </table>
     </div>
 </article>`
-                
-
-    console.log(player.data)
-
-    
+                    
   });
 }
 
