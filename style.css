@@ -544,6 +544,7 @@ header nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .numbers-wrapper {
@@ -553,6 +554,7 @@ header nav {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     padding: 10%;
+    padding-left: 20%;
 }
 
 .numbers-wrapper svg {
@@ -591,10 +593,15 @@ header nav {
     transform: rotate(-12.2deg);
 }
 
-.nr358 {
+.single-number-wrapper {
     position: absolute;
     top: 14%;
     left: 7%;
+    min-width: 20em;
+    /* background-color: #FFDA1D; */
+}
+
+.nr358 {
     transform: rotate(-6.5deg);
     color: var(--justWhite);
 }
@@ -607,7 +614,7 @@ header nav {
     transform: translateY(-8%);
 }
 
-path {
+.numbers-wrapper path {
     fill: none;
     stroke: currentColor;
     stroke-width: 5px;
@@ -845,7 +852,7 @@ footer a {
 
 .footer-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     padding: 4em 6em;
     align-items: flex-start;
@@ -1278,17 +1285,26 @@ footer svg:hover {
     .numbers-wrapper p {
         transform: rotate(270deg);
     }
+
+    .single-number-wrapper {
+        position: absolute;
+        top: 14%;
+        left: 7%;
+        min-height: 10em;
+        min-width: 8em;
+        /* background-color: #FFDA1D; */
+    }
     
     .nr358 {
-        transform: rotate(270deg) translateX(-110%) translateY(-20%);
+        transform: rotate(270deg) translateX(-60%) translateY(-60%);
     }
 
     .nr04 {
-        transform: rotate(276deg) translateX(-20%) translateY(20%);
+        transform: rotate(276deg) translateX(-20%);
     }
 
     .nr08 {
-        transform: rotate(270deg) translateX(-20%) translateY(20%);
+        transform: rotate(265deg) translateX(0%);
     }
 
     .nr12 {
@@ -1296,7 +1312,8 @@ footer svg:hover {
     }
 
     .new-partners p {
-        transform: rotate(270deg) translateX(160%) translateY(-1250%);
+        left: 0;
+        transform: rotate(270deg) translateX(82%) translateY(-680%);
     }
 
     .clubs-invested p {
@@ -1305,9 +1322,12 @@ footer svg:hover {
 
     .children-saved p {
         transform: rotate(270deg) translateX(60%) translateY(240%);
-
     }
     
+    svg .filled {
+        fill: currentColor;
+        clip-path:  inset(0 0 0 calc(var(--variable) * 100%) );    
+    }
 
 
     /* ============== NUMBERS SECTION END MOBILE ============== */
@@ -1319,6 +1339,8 @@ footer svg:hover {
 
     .footer-container {
         padding: 2em;
+        flex-direction: column;
     }
+
 }
 
