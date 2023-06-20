@@ -19,7 +19,41 @@ const init = async () => {
   const players = await client.getAllByType('spelers')
   
   players.forEach(player => {
-    // cardSection.innerHTML = 'number: ' + player.data.nummer
+  
+    cardSection.innerHTML =
+    `<article class="card"> 
+    <div class="card-header">
+        <img class="card-profile" src="`+ player.data.afbeelding.url +`" alt="">
+        <span class="card-number">` + player.data.nummer + `</span>
+        <span class="card-nm">RB</span>
+        <img class="card-flag" src="./assets/card/flag.png" alt="">
+        <img class="card-logo" src="./assets/card/smallInkLogo.svg" alt="">
+    </div>  
+    <div class="card-text">
+
+        <h3>` + player.data.nummer + ` </h3>
+    <table>
+        <tr>
+          <td class="number">` + player.data.eng + `</td>
+          <td>ENG</td>
+          <td class="number">` + player.data.por + `</td>
+          <td>POR</td>
+        </tr>
+        <tr>
+          <td class="number">` + player.data.mat + `</td>
+          <td>MAT </td>
+          <td class="number">` + player.data.phy + `</td>
+          <td>PHY</td>
+        </tr>
+        <tr>
+          <td class="number">` + player.data.bio + `</td>
+          <td>BIO </td>
+          <td class="number">` + player.data.foo+`</td>
+          <td>FOO</td>
+        </tr>
+      </table>
+    </div>
+</article>`
                 
 
     console.log(player.data)
