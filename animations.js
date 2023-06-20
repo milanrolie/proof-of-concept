@@ -118,49 +118,73 @@ document.querySelector(".close-menu-button").addEventListener("click", () => {
 // ----------------- Numbers -----------------
 
 gsap.to(".nr358", {
+  scrollTrigger: {
+    trigger: ".filled",
+    start: "center center",
+    // markers: true, 
+  },
   innerText: 358, 
-  duration: 3.5,
-  // delay: 0.1,
+  duration: 3,
+  ease: Power4.easeOut,
   snap: {
-    innerText: 1
+    innerText: 1,
   }
 });
 
 gsap.to(".nr12", {
+  scrollTrigger: {
+    trigger: ".filled",
+    start: "center center",
+    // markers: true, 
+  },
   innerText: 12, 
   duration: 2,
-  // delay: 0.1,
+  delay: 1,
   snap: {
-    innerText: 1
+    innerText: 1,
+    ease: Power4.easeOut,
   }
 })
 
 gsap.to(".nr04", {
+  scrollTrigger: {
+    trigger: ".filled",
+    start: "center center",
+    // markers: true, 
+  },
   innerText: 04, 
-  duration: 1.5,
-  // delay: 0.1,
+  duration: 1,
+  delay: 1,
   snap: {
-    innerText: 1
+    innerText: 1,
+    ease: Power4.easeOut,
   }
 })
 
 gsap.to(".nr08", {
+  scrollTrigger: {
+    trigger: ".filled",
+    start: "center center",
+    // markers: true, 
+  },
   innerText: 08, 
   duration: 3,
-  // delay: 0.1,
+  delay: 1.5,
   snap: {
-    innerText: 1
+    innerText: 1,
+    ease: Power4.easeOut,
   }
 })
 
 gsap.from(".filled", {
   scrollTrigger: {
     trigger: ".filled",
-    scrub: 2,
-    start: "top-=700",
-    end: "top",
+    start: "center center",
+    // markers: true, 
   },
-  duration: 2,
+  stagger: .4,
+  duration: 3,
+  ease: Power4.easeOut,
   "--variable": 1,
 })
 
