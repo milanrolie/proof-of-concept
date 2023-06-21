@@ -58,7 +58,7 @@ gsap.to(".slide-first", {
       opacity: 1,
       stagger: {
         from: "left",
-        each: 0.2,
+        each: 0.3,
       },
       onComplete() {
         gsap.to(".slide-second", {
@@ -66,7 +66,7 @@ gsap.to(".slide-first", {
           scale: 1,
           duration: 0.4,
           onComplete() {
-            gsap.to(".hero-video video", {
+            gsap.to(".hero-video", {
               x: 0,
               duration: 0.3,
             });
@@ -88,93 +88,86 @@ document
   .addEventListener("click", () => {
     document.querySelector(".mobile-menu").classList.add("mobile-menu-slider");
     document.querySelector("body").style.overflow = "hidden";
-    document.querySelectorAll(".logo path").forEach((path) => {
-      path.classList.add("logo-path-mobile");
-    });
     gsap.to(".menu-stagger", {
       y: 0,
-      duration: 0.2,
       opacity: 1,
-      delay: 0.2,
+      delay: 0.4,
       ease: "none",
       stagger: {
-        each: 0.1,
+        each: 0.2,
       },
     });
   });
 
-document
-  .querySelector(".close-menu-button-text")
-  .addEventListener("click", () => {
-    gsap.to(".menu-stagger", {
-      y: -30,
-      x: 0,
-      duration: 0.2,
-      opacity: 0,
-      stagger: {
-        each: 0.1,
-      },
-      onComplete() {
-        document
-          .querySelector(".mobile-menu")
-          .classList.remove("mobile-menu-slider");
-        document.querySelector("body").style.overflow = "scroll";
-        document.querySelectorAll(".logo path").forEach((path) => {
-          path.classList.remove("logo-path-mobile");
-        });
-      },
-    });
+document.querySelector(".close-menu-button").addEventListener("click", () => {
+  document.querySelector(".mobile-menu").classList.remove("mobile-menu-slider");
+  document.querySelector("body").style.overflow = "scroll";
+  gsap.to(".menu-stagger", {
+    y: -30,
+    opacity: 0,
+    duration: 0.2,
+    delay: 0.4,
+    stagger: {
+      each: 0.1,
+    },
   });
+});
+
+
 
 // ----------------- Numbers -----------------
 
 gsap.to(".nr358", {
-  innerText: 358,
+  innerText: 358, 
   duration: 3.5,
   // delay: 0.1,
   snap: {
-    innerText: 1,
-  },
+    innerText: 1
+  }
 });
 
 gsap.to(".nr12", {
-  innerText: 12,
+  innerText: 12, 
   duration: 2,
-  delay: 1,
+  // delay: 0.1,
   snap: {
-    innerText: 1,
-  },
-});
+    innerText: 1
+  }
+})
 
 gsap.to(".nr04", {
-  innerText: 04,
+  innerText: 04, 
   duration: 1.5,
   // delay: 0.1,
   snap: {
-    innerText: 1,
-  },
-});
+    innerText: 1
+  }
+})
 
 gsap.to(".nr08", {
-  innerText: 08,
+  innerText: 08, 
   duration: 3,
-  delay: 1.5,
+  // delay: 0.1,
   snap: {
-    innerText: 1,
-  },
-});
+    innerText: 1
+  }
+})
 
 gsap.from(".filled", {
   scrollTrigger: {
     trigger: ".filled",
-    start: "center center",
-    // markers: true,
+    scrub: 2,
+    start: "top-=700",
+    end: "top",
   },
-  stagger: 0.4,
-  duration: 3,
-  ease: Power4.easeOut,
+  duration: 2,
   "--variable": 1,
-});
+})
+
+
+
+
+
 
 //-----------------SCREEN WIDTH CHECK-----------------------//
 
@@ -189,66 +182,11 @@ window.addEventListener("resize", () => {
   }
 });
 
-//-----------------CHANGE NAV COLOR ON SCROLL-----------------------//
-
-const root = document.querySelector(":root");
-const color = getComputedStyle(root).getPropertyValue("--link-hover-color");
-const secondColor = getComputedStyle(root).getPropertyValue("--pictonBlue");
-const logo = document.querySelector(".logo");
-const intro = document.querySelector(".intro");
-const navLinks = document.querySelectorAll(".top-nav a, .top-nav span");
-const topNavSponsorButton = document.querySelector(".sponsor-button");
-const startingLink = document.querySelector(".starting-link");
-gsap.to(".top-nav", {
-  scrollTrigger: {
-    trigger: ".intro",
-    start: "top -50px",
-    end: "bottom 50px",
-    onEnter() {
-      logo.classList.add("color-change-onscroll");
-      topNavSponsorButton.classList.add("change-button-background");
-      startingLink.classList.add("change-color-starting-link");
-      root.style.setProperty("--link-hover-color", "#3DBAE1");
-      navLinks.forEach((link) => {
-        link.classList.add("change-color-links-onscroll");
-      });
-    },
-    onLeave() {
-      logo.classList.remove("color-change-onscroll");
-      topNavSponsorButton.classList.remove("change-button-background");
-      startingLink.classList.remove("change-color-starting-link");
-      root.style.setProperty("--link-hover-color", "#FFDA1D");
-      navLinks.forEach((link) => {
-        link.classList.remove("change-color-links-onscroll");
-      });
-    },
-    onEnterBack() {
-      logo.classList.add("color-change-onscroll");
-      topNavSponsorButton.classList.add("change-button-background");
-      startingLink.classList.add("change-color-starting-link");
-      root.style.setProperty("--link-hover-color", "#3DBAE1");
-      navLinks.forEach((link) => {
-        link.classList.add("change-color-links-onscroll");
-      });
-    },
-    onLeaveBack() {
-      logo.classList.remove("color-change-onscroll");
-      topNavSponsorButton.classList.remove("change-button-background");
-      startingLink.classList.remove("change-color-starting-link");
-      root.style.setProperty("--link-hover-color", "#FFDA1D");
-      navLinks.forEach((link) => {
-        link.classList.remove("change-color-links-onscroll");
-      });
-    },
-    markers: true,
-  },
-});
-
-// navLinks.forEach((link) => {
-//   link.addEventListener("mouseover", () => {
-//     link.style.color = "blue";
+// document
+//   .querySelector(".open-menu-button-wrapper")
+//   .addEventListener("click", () => {
+//     gsap.to(".mobile-menu", {
+//       scale: 1,
+//       duration: 0.5,
+//     });
 //   });
-//   link.addEventListener("mouseleave", () => {
-//     link.style.color = "white";
-//   });
-// });
