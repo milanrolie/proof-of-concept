@@ -151,6 +151,8 @@
     --paragraph-font: 'Jubilat', serif;
     --header-font: 'Kirang Haerang', sans-serif;
     --link-hover-color: #FFDA1D;
+    --button-hover-color: #FFFFFF;
+    --top-nav-sponsor-button-hover-color: #051A1A;
 }
 
 body {
@@ -225,6 +227,11 @@ header nav {
     color: var(--justWhite);
 }
 
+.top-nav-link:hover{
+    color: var(--link-hover-color);
+    cursor: pointer;
+}
+
 .change-color-links-onscroll{
     color: var(--charcoal);
 }
@@ -233,11 +240,6 @@ header nav {
     display: flex;
     align-items: center;
     gap: 34px;
-}
-
-.top-nav a:hover {
-    color: var(--link-hover-color);
-    cursor: pointer;
 }
 
 main{
@@ -251,13 +253,18 @@ main{
     margin-left: 80%;
 }
 
-.logo {
+.logo-link{
+    width: fit-content;
     position: absolute;
     margin: 0 auto 0 auto;
     left: 0;
     right: 0;
-    width: clamp(25px, 8vw, 65px);
     z-index: 20;
+    color: inherit;
+}
+
+.logo {
+    width: clamp(25px, 8vw, 65px);
 }
 
 .logo path{
@@ -281,12 +288,17 @@ main{
     gap: 0.25rem;
 }
 
-.top-nav-sponsor-button {
+#top-nav-sponsor-button{
     margin: 0 0 0 30px;
     font-size: clamp(1vw, 1vw, 14px);
     display: flex;
     align-items: center;
     gap: 1vw;
+    text-decoration: none;
+}
+
+#top-nav-sponsor-button:hover{
+    color: var(--top-nav-sponsor-button-hover-color);
 }
 
 .starting-link{
@@ -294,7 +306,7 @@ main{
 }
 
 .change-color-starting-link{
-    color: var(--pictonBlue);
+    color: var(--justWhite);
 }
 
 .sponsor-button svg {
@@ -893,7 +905,7 @@ svg .filled {
     padding-top: 2em;
 }
 
-.sponsors>.sponsor-center-text>button {
+.sponsors>.sponsor-center-text>a {
     background-color: var(--candelLight);
     font-family: Apercu;
     border-radius: 5em;
@@ -902,9 +914,10 @@ svg .filled {
     font-size: 0.75em;
     margin-top: 2em;
     border: 0px;
+    text-decoration: none;
 }
 
-.sponsors>.sponsor-center-text>button:hover {
+.sponsors>.sponsor-center-text>a:hover {
     background-color: var(--justWhite);
     color: var(--charcoal);
 
@@ -1127,10 +1140,11 @@ footer nav {
 }
 
 .sponsor-button {
+    text-decoration: none;
     color: var(--charcoal);
     background-color: var(--candelLight);
     font-family: var(--copy-font);
-    font-weight: 700;
+    font-weight: bold;
     border: none;
     border-radius: 3em;
     padding: 1em 2em;
@@ -1140,13 +1154,21 @@ footer nav {
 }
 
 .sponsor-button:hover {
-    background-color: var(--justWhite);
+    background-color: var(--button-hover-color);
+    color: var(--charcoal);
+}
+
+#footer-sponsor-button{
+    font-weight: bold;
+}
+
+#footer-sponsor-button:hover{
+    color: var(--charcoal);
 }
 
 .change-button-background{
-    background-color: var(--pictonBlue);
+    background-color: var(--justWhite);
 }
-
 
 .sponsor-button:hover svg {
     transform: translateY(1px) translateX(3px);
@@ -1392,6 +1414,7 @@ fill: var(--charcoal);
         font-size: clamp(10px, 3vw, 65px);
         text-align: center;
     }
+
     .mobile-menu-content {
         display: flex;
         gap: 4rem;
@@ -1402,6 +1425,7 @@ fill: var(--charcoal);
     }   
 
     .mobile-link{
+        text-decoration: none;
         width: fit-content;
         color: var(--charcoal);
         font-size: clamp( 28px, 10vw, 43px);
@@ -1441,7 +1465,7 @@ fill: var(--charcoal);
         display: none;
     }
 
-    .top-nav-sponsor-button {
+    #top-nav-sponsor-button {
         display: none;
     }
 
@@ -1449,7 +1473,7 @@ fill: var(--charcoal);
         margin: 0 0 0 auto;
     }
 
-    .logo {
+    .logo-link{
         position: static;
         margin: 0 auto 0 0;
     }
