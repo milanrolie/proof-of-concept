@@ -59,7 +59,7 @@ gsap.to(".slide-first", {
       opacity: 1,
       stagger: {
         from: "left",
-        each: 0.3,
+        each: 0.15,
       },
       onComplete() {
         gsap.to(".slide-second", {
@@ -67,7 +67,7 @@ gsap.to(".slide-first", {
           scale: 1,
           duration: 0.4,
           onComplete() {
-            gsap.to(".hero-video", {
+            gsap.to(".hero-video video", {
               x: 0,
               duration: 0.3,
             });
@@ -114,85 +114,78 @@ document.querySelector(".close-menu-button").addEventListener("click", () => {
   });
 });
 
-
-
 // ----------------- Numbers -----------------
 
 gsap.to(".nr358", {
   scrollTrigger: {
     trigger: ".filled",
     start: "center center",
-    // markers: true, 
+    // markers: true,
   },
-  innerText: 358, 
+  innerText: 358,
   duration: 3,
   ease: Power4.easeOut,
   snap: {
     innerText: 1,
-  }
+  },
 });
 
 gsap.to(".nr12", {
   scrollTrigger: {
     trigger: ".filled",
     start: "center center",
-    // markers: true, 
+    // markers: true,
   },
-  innerText: 12, 
+  innerText: 12,
   duration: 2,
   delay: 1,
   snap: {
     innerText: 1,
     ease: Power4.easeOut,
-  }
-})
+  },
+});
 
 gsap.to(".nr04", {
   scrollTrigger: {
     trigger: ".filled",
     start: "center center",
-    // markers: true, 
+    // markers: true,
   },
-  innerText: 04, 
+  innerText: 04,
   duration: 1,
   delay: 1,
   snap: {
     innerText: 1,
     ease: Power4.easeOut,
-  }
-})
+  },
+});
 
 gsap.to(".nr08", {
   scrollTrigger: {
     trigger: ".filled",
     start: "center center",
-    // markers: true, 
+    // markers: true,
   },
-  innerText: 08, 
+  innerText: 08,
   duration: 3,
   delay: 1.5,
   snap: {
     innerText: 1,
     ease: Power4.easeOut,
-  }
-})
+  },
+});
 
 gsap.from(".filled", {
   scrollTrigger: {
     trigger: ".filled",
     start: "center center",
-    // markers: true, 
+    // markers: true,
   },
-  stagger: .4,
+  stagger: 0.4,
   duration: 3,
   ease: Power4.easeOut,
   "--variable": 1,
-})
-
-
-
-
-
+});
 
 //-----------------SCREEN WIDTH CHECK-----------------------//
 
@@ -207,11 +200,64 @@ window.addEventListener("resize", () => {
   }
 });
 
-// document
-//   .querySelector(".open-menu-button-wrapper")
-//   .addEventListener("click", () => {
-//     gsap.to(".mobile-menu", {
-//       scale: 1,
-//       duration: 0.5,
-//     });
-//   });
+//-----------------CHANGE NAV COLOR ON SCROLL-----------------------//
+
+const root = document.querySelector(":root");
+// const color = getComputedStyle(root).getPropertyValue("--link-hover-color");
+// const secondColor = getComputedStyle(root).getPropertyValue("--pictonBlue");
+const logo = document.querySelector(".logo");
+const intro = document.querySelector(".intro");
+const navLinks = document.querySelectorAll(".top-nav-link, .top-nav span");
+const topNavSponsorButton = document.querySelector("#top-nav-sponsor-button");
+const startingLink = document.querySelector(".starting-link");
+gsap.to(".top-nav", {
+  scrollTrigger: {
+    trigger: ".intro",
+    start: "top -50px",
+    end: "bottom 50px",
+    onEnter() {
+      logo.classList.add("color-change-onscroll");
+      topNavSponsorButton.classList.add("change-button-background");
+      startingLink.classList.add("change-color-starting-link");
+      root.style.setProperty("--link-hover-color", "#3DBAE1");
+      root.style.setProperty("--button-hover-color", "#3DBAE1");
+      root.style.setProperty("--top-nav-sponsor-button-hover-color", "#FFFFFF");
+      navLinks.forEach((link) => {
+        link.classList.add("change-color-links-onscroll");
+      });
+    },
+    onLeave() {
+      logo.classList.remove("color-change-onscroll");
+      topNavSponsorButton.classList.remove("change-button-background");
+      startingLink.classList.remove("change-color-starting-link");
+      root.style.setProperty("--link-hover-color", "#FFDA1D");
+      root.style.setProperty("--button-hover-color", "#FFFFFF");
+      root.style.setProperty("--top-nav-sponsor-button-hover-color", "#051A1A");
+      navLinks.forEach((link) => {
+        link.classList.remove("change-color-links-onscroll");
+      });
+    },
+    onEnterBack() {
+      logo.classList.add("color-change-onscroll");
+      topNavSponsorButton.classList.add("change-button-background");
+      startingLink.classList.add("change-color-starting-link");
+      root.style.setProperty("--link-hover-color", "#3DBAE1");
+      root.style.setProperty("--button-hover-color", "#3DBAE1");
+      root.style.setProperty("--top-nav-sponsor-button-hover-color", "#FFFFFF");
+      navLinks.forEach((link) => {
+        link.classList.add("change-color-links-onscroll");
+      });
+    },
+    onLeaveBack() {
+      logo.classList.remove("color-change-onscroll");
+      topNavSponsorButton.classList.remove("change-button-background");
+      startingLink.classList.remove("change-color-starting-link");
+      root.style.setProperty("--link-hover-color", "#FFDA1D");
+      root.style.setProperty("--button-hover-color", "#FFFFFF");
+      root.style.setProperty("--top-nav-sponsor-button-hover-color", "#051A1A");
+      navLinks.forEach((link) => {
+        link.classList.remove("change-color-links-onscroll");
+      });
+    },
+  },
+});
