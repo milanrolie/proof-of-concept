@@ -1,20 +1,20 @@
-import * as prismic from 'https://cdn.skypack.dev/@prismicio/client';
+// import * as prismic from 'https://cdn.skypack.dev/@prismicio/client';
 
-const repositoryName = 'projectink'
-const accessToken = 'MC5aSTNldEJVQUFDb0FCNFFt.dSHvv71CND8t77-977-977-9Mzp377-9fjTvv73vv73vv73vv73vv73vv73vv71G77-977-9GO-_ve-_vWrvv718'
-//roep de client(tussenlaag) aan en geef de repo naam en accestoken mee om in de api te kunnen werken
-const client = prismic.createClient(repositoryName, { accessToken })
-//als de connectie gemaakt kan worden haal dan alle data die als type speler heeft op
-let childrenSaved
+// const repositoryName = 'projectink'
+// const accessToken = 'MC5aSTNldEJVQUFDb0FCNFFt.dSHvv71CND8t77-977-977-9Mzp377-9fjTvv73vv73vv73vv73vv73vv73vv71G77-977-9GO-_ve-_vWrvv718'
+// //roep de client(tussenlaag) aan en geef de repo naam en accestoken mee om in de api te kunnen werken
+// const client = prismic.createClient(repositoryName, { accessToken })
+// //als de connectie gemaakt kan worden haal dan alle data die als type speler heeft op
+// let childrenSaved
 
-const init = async () => {
-  const graph = await client.getAllByType('graph')
+// const init = async () => {
+//   const graph = await client.getAllByType('graph')
   
-  childrenSaved = graph[0].data.children_saved
-}
-console.log(childrenSaved); 
+//   childrenSaved = graph[0].data.children_saved
+// }
+// console.log(childrenSaved); 
 
-init()
+// init()
 
 
 gsap.to("#legends-marquee", {
@@ -170,11 +170,7 @@ gsap.to(".nr04", {
     start: "center center",
     // markers: true,
   },
-<<<<<<< Updated upstream
-  innerText: 04,
-=======
   innerText: 4, 
->>>>>>> Stashed changes
   duration: 1,
   delay: 1,
   snap: {
@@ -189,11 +185,7 @@ gsap.to(".nr08", {
     start: "center center",
     // markers: true,
   },
-<<<<<<< Updated upstream
-  innerText: 08,
-=======
   innerText: 8, 
->>>>>>> Stashed changes
   duration: 3,
   delay: 1.5,
   snap: {

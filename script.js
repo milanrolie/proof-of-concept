@@ -22,7 +22,8 @@ const init = async () => {
 
         cardSection.innerHTML +=
             `<article class="card"> 
-    <div class="card-header">
+            <div class="card-background"></div>
+            <div class="card-header">
         <img class="card-profile" src="`+ player.data.afbeelding.url + `" alt="">
         <span class="card-number">` + player.data.nummer + `</span>
         <span class="card-nm">RB</span>
