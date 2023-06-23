@@ -933,7 +933,8 @@ svg .filled {
 }
 
 .sponsors>.sponsor-center-text>p {
-    padding-top: 2em;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .sponsors>.sponsor-center-text>a {
@@ -1175,7 +1176,7 @@ footer nav {
     font-family: var(--copy-font);
     font-size: 1em;
     font-weight: 200;
-    line-height: 1.7em;
+    line-height: 1em;
     transition: .2s;
 }
 
