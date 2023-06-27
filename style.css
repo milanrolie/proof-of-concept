@@ -291,12 +291,18 @@ main {
 }
 
 #top-nav-sponsor-button {
-    margin: 0 0 0 30px;
-    font-size: clamp(1vw, 1vw, 14px);
-    display: flex;
-    align-items: center;
-    gap: 1vw;
     text-decoration: none;
+    margin-left: 1em;
+    color: var(--charcoal);
+    background-color: var(--candelLight);
+    font-family: var(--copy-font);
+    font-weight: bold;
+    border: none;
+    border-radius: 3em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    transition: .2s;
+    cursor: pointer;
 }
 
 #top-nav-sponsor-button:hover {
