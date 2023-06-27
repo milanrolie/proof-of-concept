@@ -293,8 +293,6 @@ main {
 #top-nav-sponsor-button {
     text-decoration: none;
     margin-left: 1em;
-    color: var(--charcoal);
-    background-color: var(--candelLight);
     font-family: var(--copy-font);
     font-weight: bold;
     border: none;
